@@ -125,7 +125,7 @@ NSString* pickRandomDrug(void)
 
 @implementation HVWeightMeasurement (HVTestExtensions)
 
-+(HVWeightMeasurement *)createRandomGramsMin:(NSUInteger)min max:(NSUInteger)max
++(HVWeightMeasurement *)createRandomGramsMin:(int)min max:(int)max
 {
     int value = [HVRandom randomIntInRangeMin:min max:max];
     if (value <= 0)
@@ -788,15 +788,15 @@ NSString* pickRandomDrug(void)
     journal.settlingMinutesValue = [HVRandom randomIntInRangeMin:5 max:30];
     journal.sleepMinutesValue = [HVRandom randomIntInRangeMin:180 max:360];
     
-    int awakeMinutes =  [HVRandom randomIntInRangeMin:0 max:55];
+    NSInteger awakeMinutes =  [HVRandom randomIntInRangeMin:0 max:55];
     if (awakeMinutes > 0 && doAwakenings)
     {
         HVOccurence* awakening = [HVOccurence forDuration:awakeMinutes atHour:((bedtime.hour) + 2) % 24 andMinute:bedtime.minute];
         [journal.awakenings addObject:awakening];
     }
-    int bedMinutes = journal.settlingMinutesValue + journal.sleepMinutesValue + [HVRandom randomIntInRangeMin:5 max:55];
+    NSInteger bedMinutes = journal.settlingMinutesValue + journal.sleepMinutesValue + [HVRandom randomIntInRangeMin:5 max:55];
     
-    int wakeupHour = (journal.bedTime.hour + (bedMinutes / 60)) % 24;
+    NSInteger wakeupHour = (journal.bedTime.hour + (bedMinutes / 60)) % 24;
     HVTime* wakeTime = [HVTime fromHour:wakeupHour andMinute:bedMinutes % 60];
     
     journal.wakeTime = wakeTime;

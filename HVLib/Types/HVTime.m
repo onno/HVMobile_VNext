@@ -26,12 +26,12 @@ static const xmlChar* x_element_millis = XMLSTRINGCONST("f");
 
 @implementation HVTime
 
--(int) hour
+-(NSInteger) hour
 {
     return (m_hours ? m_hours.value : -1);
 }
 
--(void) setHour:(int) hours
+-(void) setHour:(NSInteger) hours
 {
     if (hours >= 0)
     {
@@ -44,12 +44,12 @@ static const xmlChar* x_element_millis = XMLSTRINGCONST("f");
     }
 }
 
--(int) minute
+-(NSInteger) minute
 {
     return (m_minutes ? m_minutes.value : -1);
 }
 
--(void) setMinute:(int)minutes
+-(void) setMinute:(NSInteger)minutes
 {
     if (minutes >= 0)
     {
@@ -67,12 +67,12 @@ static const xmlChar* x_element_millis = XMLSTRINGCONST("f");
     return (m_seconds != nil);
 }
 
--(int) second
+-(NSInteger) second
 {
     return (m_seconds ? m_seconds.value : -1);
 }
 
--(void) setSecond:(int)seconds
+-(void) setSecond:(NSInteger)seconds
 {
     if (seconds >= 0)
     {
@@ -90,12 +90,12 @@ static const xmlChar* x_element_millis = XMLSTRINGCONST("f");
     return (m_seconds != nil);
 }
 
--(int) millisecond
+-(NSInteger) millisecond
 {
     return (m_milliseconds ? m_milliseconds.value : -1);
 }
 
--(void) setMillisecond:(int)milliseconds
+-(void) setMillisecond:(NSInteger)milliseconds
 {
     if (milliseconds >= 0)
     {
@@ -113,12 +113,12 @@ static const xmlChar* x_element_millis = XMLSTRINGCONST("f");
 {
 }
 
--(id)initWithHour:(int)hour minute:(int)minute
+-(id)initWithHour:(NSInteger)hour minute:(NSInteger)minute
 {
     return [self initWithHour:hour minute:minute second:-1];
 }
 
--(id) initWithHour:(int)hour minute:(int)minute second:(int)second
+-(id) initWithHour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second
 {
     self = [super init];
     HVCHECK_SELF;
@@ -167,7 +167,7 @@ LError:
     HVALLOC_FAIL;
 }
 
-+(HVTime *)fromHour:(int)hour andMinute:(int)minute
++(HVTime *)fromHour:(NSInteger)hour andMinute:(NSInteger)minute
 {
     return [[[HVTime alloc] initWithHour:hour minute:minute] autorelease];
 }

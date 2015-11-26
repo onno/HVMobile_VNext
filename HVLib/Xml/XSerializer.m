@@ -362,7 +362,7 @@ LError:
     return [self.converter stringToGuid:[self readValueEnsure]];
 }
 
--(int) readInt
+-(NSInteger) readInt
 {
     return [self.converter stringToInt:[self readValueEnsure]];
 }
@@ -453,7 +453,7 @@ LError:
     return [self.converter stringToDate:string];
 }
 
--(int)readNextInt
+-(NSInteger)readNextInt
 {
     NSString* string = [self readNextElement];
     if ([NSString isNilOrEmpty:string])
@@ -464,7 +464,7 @@ LError:
     return [self.converter stringToInt:string];    
 }
 
--(int) readIntElement:(NSString *)name
+-(NSInteger) readIntElement:(NSString *)name
 {
     NSString* string = [self readStringElement:name];
     if ([NSString isNilOrEmpty:string])
@@ -475,7 +475,7 @@ LError:
     return [self.converter stringToInt:string];
 }
 
--(BOOL) readIntElement:(NSString *)name into:(int *)value
+-(BOOL) readIntElement:(NSString *)name into:(NSInteger *)value
 {
     if ([self isStartElementWithName:name])
     {
@@ -706,7 +706,7 @@ LError:
     return value;
 }
 
--(BOOL) readIntAttribute:(NSString *)name intValue:(int *) value
+-(BOOL) readIntAttribute:(NSString *)name intValue:(NSInteger *) value
 {
     if (!self.hasAttributes || ![self moveToAttribute:name])
     {
@@ -892,7 +892,7 @@ LError:
     return [self.converter stringToDate:string];
 }
 
--(int) readIntElementXmlName:(const xmlChar *)xmlName
+-(NSInteger) readIntElementXmlName:(const xmlChar *)xmlName
 {
     NSString* string = [self readStringElementWithXmlName:xmlName];
     if ([NSString isNilOrEmpty:string])
@@ -903,7 +903,7 @@ LError:
     return [self.converter stringToInt:string];
 }
 
--(BOOL) readIntElementXmlName:(const xmlChar *)xmlName into:(int *)value
+-(BOOL) readIntElementXmlName:(const xmlChar *)xmlName into:(NSInteger *)value
 {
     if ([self isStartElementWithXmlName:xmlName])
     {
@@ -1055,7 +1055,7 @@ void throwWriterError(void)
     [self writeText:[self.converter guidToString:guid]];
 }
 
--(void) writeInt:(int)value
+-(void) writeInt:(NSInteger)value
 {
     [self writeText:[self.converter intToString:value]];
 }
@@ -1185,7 +1185,7 @@ void throwWriterError(void)
     }
 }
 
--(void) writeElement:(NSString *)name intValue:(int)value
+-(void) writeElement:(NSString *)name intValue:(NSInteger)value
 {
     HVCHECK_XWRITE([self writeStartElement:name]);
     {
@@ -1243,7 +1243,7 @@ void throwWriterError(void)
     }
 }
 
--(void) writeAttribute:(NSString *)name intValue:(int)value
+-(void) writeAttribute:(NSString *)name intValue:(NSInteger)value
 {
     [self writeAttribute:name value:[self.converter intToString:value]];
 }
@@ -1311,7 +1311,7 @@ void throwWriterError(void)
     HVCHECK_XWRITE([self writeEndElement]);    
 }
 
--(void)writeElementXmlName:(const xmlChar *)xmlName intValue:(int)value
+-(void)writeElementXmlName:(const xmlChar *)xmlName intValue:(NSInteger)value
 {
     HVCHECK_XWRITE([self writeStartElementXmlName:xmlName]);
     {

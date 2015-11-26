@@ -36,12 +36,12 @@ static NSString* const c_element_instructions = @"instructions";
 @synthesize expirationDate = m_expiration;
 @synthesize instructions = m_instructions;
 
--(int)refills
+-(NSInteger)refills
 {
     return (m_refills) ? m_refills.value : -1;
 }
 
--(void)setRefills:(int)refills
+-(void)setRefills:(NSInteger)refills
 {
     if (refills >= 0)
     {
@@ -54,12 +54,12 @@ static NSString* const c_element_instructions = @"instructions";
     }
 }
 
--(int)daysSupply
+-(NSInteger)daysSupply
 {
     return (m_daysSupply) ? m_daysSupply.value : -1;
 }
 
--(void)setDaysSupply:(int)daysSupply
+-(void)setDaysSupply:(NSInteger)daysSupply
 {
     if (daysSupply >= 0)
     {

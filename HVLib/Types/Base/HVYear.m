@@ -20,11 +20,11 @@
 
 @implementation HVYear
 
--(int) min
+-(NSInteger) min
 {
     return 1000;
 }
--(int) max
+-(NSInteger) max
 {
     return 9999;
 }

@@ -20,12 +20,12 @@
 
 @implementation HVPositiveInt
 
--(int) min
+-(NSInteger) min
 {
     return 0;
 }
 
--(BOOL)validateValue:(int)value
+-(BOOL)validateValue:(NSInteger)value
 {
     return(self.min < value && value <= self.max);
 }

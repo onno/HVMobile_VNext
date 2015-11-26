@@ -32,7 +32,7 @@ enum HVItemChangeType
 @private
     enum HVItemChangeType m_changeType;
     NSTimeInterval m_timestamp;
-    int m_attempt;
+    NSInteger m_attempt;
 
     NSString* m_changeID;
     NSString* m_typeID;
@@ -55,7 +55,7 @@ enum HVItemChangeType
 @property (readwrite, nonatomic, retain) HVItem* localItem;
 @property (readwrite, nonatomic, retain) HVItem* updatedItem;
 
-@property (readwrite, nonatomic) int attemptCount;
+@property (readwrite, nonatomic) NSInteger attemptCount;
 
 -(id) initWithTypeID:(NSString *) typeID key:(HVItemKey *) key changeType:(enum HVItemChangeType) changeType;
 

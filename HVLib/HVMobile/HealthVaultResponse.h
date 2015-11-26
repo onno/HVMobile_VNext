@@ -35,8 +35,8 @@
 /// Implements HealthVault response.
 @interface HealthVaultResponse : NSObject {
 
-	int _statusCode;
-    int _webStatusCode;
+	NSInteger _statusCode;
+    NSInteger _webStatusCode;
 	NSString *_infoXml;
 	NSString *_responseXml;
 	NSString *_errorText;
@@ -47,10 +47,10 @@
 }
 
 /// Gets or sets numeric status code of the operation.
-@property (assign) int statusCode;
+@property (assign) NSInteger statusCode;
 
 // Gets the Http response code...
-@property (assign) int webStatusCode;
+@property (assign) NSInteger webStatusCode;
 
 /// Gets or sets the informational part of the response.
 @property (retain) NSString *infoXml;

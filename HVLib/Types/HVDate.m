@@ -25,12 +25,12 @@ static const xmlChar* x_element_day   = XMLSTRINGCONST("d");
 
 @implementation HVDate
 
--(int) year
+-(NSInteger) year
 {
     return (m_year) ? m_year.value : -1;
 }
 
--(void) setYear:(int)year
+-(void) setYear:(NSInteger)year
 {
     if (year >= 0)
     {
@@ -43,12 +43,12 @@ static const xmlChar* x_element_day   = XMLSTRINGCONST("d");
     }
 }
 
--(int) month
+-(NSInteger) month
 {
     return (m_month) ? m_month.value : -1;
 }
 
--(void) setMonth:(int) month
+-(void) setMonth:(NSInteger) month
 {
     if (month >= 0)
     {
@@ -61,12 +61,12 @@ static const xmlChar* x_element_day   = XMLSTRINGCONST("d");
     }
 }
 
--(int) day
+-(NSInteger) day
 {
     return (m_day) ? m_day.value : -1;
 }
 
--(void) setDay:(int)day
+-(void) setDay:(NSInteger)day
 {
     if (day >= 0)
     {
@@ -106,7 +106,7 @@ LError:
     HVALLOC_FAIL;
 }
 
--(id) initWithYear:(int) yearValue month:(int) monthValue day:(int) dayValue
+-(id) initWithYear:(NSInteger) yearValue month:(NSInteger) monthValue day:(NSInteger) dayValue
 {
     self = [super init];
     HVCHECK_SELF;
@@ -170,7 +170,7 @@ LError:
     return [[[HVDate alloc] initWithDate:date] autorelease];
 }
 
-+(HVDate *)fromYear:(int)year month:(int)month day:(int)day
++(HVDate *)fromYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
 {
     return [[[HVDate alloc] initWithYear:year month:month day:day] autorelease];
 }

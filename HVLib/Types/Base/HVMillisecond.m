@@ -20,11 +20,11 @@
 
 @implementation HVMillisecond
 
--(int) min
+-(NSInteger) min
 {
     return 0;
 }
--(int) max
+-(NSInteger) max
 {
     return 999;
 }

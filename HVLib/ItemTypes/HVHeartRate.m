@@ -36,18 +36,18 @@ static const xmlChar* x_element_flags = XMLSTRINGCONST("measurement-flags");
 @synthesize measurementConditions = m_measurementConditions;
 @synthesize measurementFlags = m_measurementFlags;
 
--(int)bpmValue
+-(NSInteger)bpmValue
 {
     return (m_bpm != nil) ? m_bpm.value : -1;
 }
 
--(void)setBpmValue:(int)bpmValue
+-(void)setBpmValue:(NSInteger)bpmValue
 {
     HVENSURE(m_bpm, HVNonNegativeInt);
     m_bpm.value = bpmValue;
 }
 
--(id)initWithBpm:(int)bpm andDate:(NSDate *)date
+-(id)initWithBpm:(NSInteger)bpm andDate:(NSDate *)date
 {
     self = [super init];
     HVCHECK_SELF;

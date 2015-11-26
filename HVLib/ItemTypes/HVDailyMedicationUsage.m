@@ -45,29 +45,29 @@ static const xmlChar* x_element_singleDoseDescr = XMLSTRINGCONST("single-dose-de
 @synthesize prescriptionType = m_prescriptionType;
 @synthesize singleDoseDescription = m_singleDoseDescription;
 
--(int)dosesConsumedValue
+-(NSInteger)dosesConsumedValue
 {
     return (m_dosesConsumed) ? m_dosesConsumed.value : -1;
 }
 
--(void)setDosesConsumedValue:(int)dosesConsumedValue
+-(void)setDosesConsumedValue:(NSInteger)dosesConsumedValue
 {
     HVENSURE(m_dosesConsumed, HVInt);
     m_dosesConsumed.value = dosesConsumedValue;
 }
 
--(int)dosesIntendedValue
+-(NSInteger)dosesIntendedValue
 {
     return (m_dosesIntended) ? m_dosesIntended.value : -1;
 }
 
--(void)setDosesIntendedValue:(int)dosesIntendedValue
+-(void)setDosesIntendedValue:(NSInteger)dosesIntendedValue
 {
     HVENSURE(m_dosesIntended, HVInt);
     m_dosesIntended.value = dosesIntendedValue;
 }
 
--(id)initWithDoses:(int)doses forDrug:(HVCodableValue *)drug onDay:(NSDate *)day
+-(id)initWithDoses:(NSInteger)doses forDrug:(HVCodableValue *)drug onDay:(NSDate *)day
 {
     HVCHECK_NOTNULL(day);
     
@@ -82,7 +82,7 @@ LError:
     HVALLOC_FAIL;
 }
 
--(id)initWithDoses:(int)doses forDrug:(HVCodableValue *)drug onDate:(HVDate *)date
+-(id)initWithDoses:(NSInteger)doses forDrug:(HVCodableValue *)drug onDate:(HVDate *)date
 {
     HVCHECK_NOTNULL(drug);
     HVCHECK_NOTNULL(date);

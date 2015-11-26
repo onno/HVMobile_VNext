@@ -37,45 +37,45 @@ static const xmlChar* x_element_heartbeat = XMLSTRINGCONST("irregular-heartbeat"
 @synthesize diastolic = m_diastolic;
 @synthesize pulse = m_pulse;
 
--(int) systolicValue
+-(NSInteger) systolicValue
 {
     return (m_systolic) ? m_systolic.value : -1;
 }
 
--(void) setSystolicValue:(int)systolicValue
+-(void) setSystolicValue:(NSInteger)systolicValue
 {
     HVENSURE(m_systolic, HVNonNegativeInt);
     m_systolic.value = systolicValue;
 }
 
--(int) diastolicValue
+-(NSInteger) diastolicValue
 {
     return (m_diastolic) ? m_diastolic.value : -1;
 }
 
--(void) setDiastolicValue:(int)diastolicValue
+-(void) setDiastolicValue:(NSInteger)diastolicValue
 {
     HVENSURE(m_diastolic, HVNonNegativeInt);
     m_diastolic.value = diastolicValue;
 }
 
--(int) pulseValue
+-(NSInteger) pulseValue
 {
     return (m_pulse) ? m_pulse.value : -1;
 }
 
--(void) setPulseValue:(int)pulseValue
+-(void) setPulseValue:(NSInteger)pulseValue
 {
     HVENSURE(m_pulse, HVNonNegativeInt);
     m_pulse.value = pulseValue;
 }
 
--(id) initWithSystolic:(int)sVal diastolic:(int)dVal
+-(id) initWithSystolic:(NSInteger)sVal diastolic:(NSInteger)dVal
 {
     return [self initWithSystolic:sVal diastolic:dVal pulse:-1];
 }
 
--(id) initWithSystolic:(int)sVal diastolic:(int)dVal andDate:(NSDate *)date
+-(id) initWithSystolic:(NSInteger)sVal diastolic:(NSInteger)dVal andDate:(NSDate *)date
 {
     HVCHECK_NOTNULL(date);
     
@@ -91,7 +91,7 @@ LError:
     HVALLOC_FAIL;
 }
 
--(id) initWithSystolic:(int)sVal diastolic:(int)dVal pulse:(int)pVal
+-(id) initWithSystolic:(NSInteger)sVal diastolic:(NSInteger)dVal pulse:(NSInteger)pVal
 {
     self = [super init];
     HVCHECK_SELF;

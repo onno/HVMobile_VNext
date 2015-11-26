@@ -69,10 +69,10 @@ double const c_triglyceridesMolarMass;
 //
 // Convenience properties
 //
-@property (readwrite, nonatomic) int ldlValue;
-@property (readwrite, nonatomic) int hdlValue;
-@property (readwrite, nonatomic) int totalValue;
-@property (readwrite, nonatomic) int triglyceridesValue;
+@property (readwrite, nonatomic) NSInteger ldlValue;
+@property (readwrite, nonatomic) NSInteger hdlValue;
+@property (readwrite, nonatomic) NSInteger totalValue;
+@property (readwrite, nonatomic) NSInteger triglyceridesValue;
 @property (readwrite, nonatomic) double ldlValueMmolPerLiter;
 @property (readwrite, nonatomic) double hdlValueMmolPerLiter;
 @property (readwrite, nonatomic) double totalValueMmolPerLiter;

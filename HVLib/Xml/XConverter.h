@@ -31,9 +31,9 @@
 }
 
 -(BOOL) tryString:(NSString *) source toInt:(int *) result;
--(int) stringToInt:(NSString *) source;
--(BOOL) tryInt:(int) source toString:(NSString **) result;
--(NSString *) intToString:(int) source;
+-(NSInteger) stringToInt:(NSString *) source;
+-(BOOL) tryInt:(NSInteger) source toString:(NSString **) result;
+-(NSString *) intToString:(NSInteger) source;
 
 -(BOOL) tryString:(NSString *) source toFloat:(float *) result;
 -(float) stringToFloat:(NSString *) source;

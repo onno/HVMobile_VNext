@@ -58,7 +58,7 @@ LError:
     HVALLOC_FAIL;
 }
 
--(NSData *)readStartAt:(int)offset chunkSize:(int)chunkSize
+-(NSData *)readStartAt:(NSUInteger)offset chunkSize:(NSUInteger)chunkSize
 {
     NSRange range = NSMakeRange(offset, chunkSize);
     return [m_source subdataWithRange:range];
@@ -107,7 +107,7 @@ LError:
     [super dealloc];
 }
 
--(NSData *)readStartAt:(int)offset chunkSize:(int)chunkSize
+-(NSData *)readStartAt:(NSUInteger)offset chunkSize:(NSUInteger)chunkSize
 {
     [m_file seekToFileOffset:offset];
     return [m_file readDataOfLength:chunkSize];

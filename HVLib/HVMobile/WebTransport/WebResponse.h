@@ -25,7 +25,7 @@
 
 	NSString *_responseData;
 	NSString *_errorText;
-    int _webStatusCode;
+    NSInteger _webStatusCode;
 }
 
 /// Gets or sets the response data.
@@ -37,6 +37,6 @@
 /// Gets error status for response. Returns YES if request has been failed.
 @property (readonly, getter = getHasError) BOOL hasError;
 
-@property (readwrite) int webStatusCode;
+@property (readwrite) NSInteger webStatusCode;
 
 @end

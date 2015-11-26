@@ -22,14 +22,14 @@
 @interface HVHttpException : NSException
 {
     NSError* m_error;
-    int m_statusCode;
+    NSInteger m_statusCode;
 }
 
 -(id) initWithError:(NSError *) error;
--(id) initWithStatusCode:(int) statusCode;
+-(id) initWithStatusCode:(NSInteger) statusCode;
 
 @property (readonly, nonatomic) NSError* error;
-@property (readonly, nonatomic) int statusCode;
+@property (readonly, nonatomic) NSInteger statusCode;
 
 
 @end

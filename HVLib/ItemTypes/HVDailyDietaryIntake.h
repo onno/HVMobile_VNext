@@ -96,7 +96,7 @@
 //
 // Convenience properties
 //
-@property (readwrite, nonatomic) int caloriesValue;
+@property (readwrite, nonatomic) NSInteger caloriesValue;
 @property (readwrite, nonatomic) double totalFatGrams;
 @property (readwrite, nonatomic) double saturatedFatGrams;
 @property (readwrite, nonatomic) double transFatGrams;

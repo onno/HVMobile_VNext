@@ -20,11 +20,11 @@
 
 @implementation HVMonth
 
--(int) min
+-(NSInteger) min
 {
     return 1;
 }
--(int) max
+-(NSInteger) max
 {
     return 12;
 }

@@ -48,12 +48,12 @@ static NSString* const c_element_cholesterol = @"cholesterol";
 @synthesize sodium = m_sodium;
 @synthesize cholesterol = m_cholesterol;
 
--(int)caloriesValue
+-(NSInteger)caloriesValue
 {
     return (m_calories) ? m_calories.value : -1;
 }
 
--(void)setCaloriesValue:(int)caloriesValue
+-(void)setCaloriesValue:(NSInteger)caloriesValue
 {
     HVENSURE(m_calories, HVPositiveInt);
     m_calories.value = caloriesValue;

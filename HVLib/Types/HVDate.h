@@ -35,21 +35,21 @@
 // Data
 //
 //-------------------------
-@property (readwrite, nonatomic) int year;
-@property (readwrite, nonatomic) int month;
-@property (readwrite, nonatomic) int day;
+@property (readwrite, nonatomic) NSInteger year;
+@property (readwrite, nonatomic) NSInteger month;
+@property (readwrite, nonatomic) NSInteger day;
 
 //-------------------------
 //
 // Initializers
 //
 //-------------------------
--(id) initWithYear:(int) year month:(int) monthValue day:(int) dayValue;
+-(id) initWithYear:(NSInteger) year month:(NSInteger) monthValue day:(NSInteger) dayValue;
 -(id) initNow;
 -(id) initWithDate:(NSDate *) date;
 -(id) initWithComponents:(NSDateComponents *) components;
 
-+(HVDate *) fromYear:(int) year month:(int) month day:(int) day;
++(HVDate *) fromYear:(NSInteger) year month:(NSInteger) month day:(NSInteger) day;
 +(HVDate *) fromDate:(NSDate *) date;
 +(HVDate *) now;
 

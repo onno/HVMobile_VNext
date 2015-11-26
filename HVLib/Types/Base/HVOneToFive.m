@@ -70,11 +70,11 @@ NSString* stringFromNormalcy(enum HVNormalcyRating rating)
 
 @implementation HVOneToFive
 
--(int) min
+-(NSInteger) min
 {
     return 1;
 }
--(int) max
+-(NSInteger) max
 {
     return 5;
 }

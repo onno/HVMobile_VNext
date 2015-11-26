@@ -45,7 +45,7 @@
 //
 // Convenience properties
 //
-@property (readwrite, nonatomic) int bpmValue;
+@property (readwrite, nonatomic) NSInteger bpmValue;
 
 
 //-------------------------
@@ -54,7 +54,7 @@
 //
 //-------------------------
 
--(id) initWithBpm:(int) bpm andDate:(NSDate*) date;
+-(id) initWithBpm:(NSInteger) bpm andDate:(NSDate*) date;
 
 +(HVItem *) newItem;
 

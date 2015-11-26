@@ -48,7 +48,7 @@ NSString* pickRandomDrug(void);
 
 @interface HVWeightMeasurement (HVTestExtensions)
 
-+(HVWeightMeasurement *) createRandomGramsMin:(NSUInteger) min max:(NSUInteger) max;
++(HVWeightMeasurement *) createRandomGramsMin:(int) min max:(int) max;
 
 @end
 

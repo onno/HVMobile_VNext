@@ -141,7 +141,7 @@ static BOOL _isRequestResponseLogEnabled = HEALTH_VAULT_TRACE_ENABLED;
         NSData *xmlData = [data dataUsingEncoding: NSUTF8StringEncoding];
 
         [request setHTTPMethod: DEFAULT_HTTP_METHOD];
-        [request addValue: [NSString stringWithFormat: @"%d", xmlData.length] forHTTPHeaderField: @"Content-Length"];
+        [request addValue: [NSString stringWithFormat: @"%lu", (unsigned long)xmlData.length] forHTTPHeaderField: @"Content-Length"];
         [request setHTTPBody: xmlData];
     }
 

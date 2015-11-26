@@ -40,13 +40,13 @@
 //
 // Required
 //
-@property (readwrite, nonatomic) int hour;              
-@property (readwrite, nonatomic) int minute; 
+@property (readwrite, nonatomic) NSInteger hour;
+@property (readwrite, nonatomic) NSInteger minute;
 //
 // Optional
 //
-@property (readwrite, nonatomic) int second; 
-@property (readwrite, nonatomic) int millisecond;
+@property (readwrite, nonatomic) NSInteger second;
+@property (readwrite, nonatomic) NSInteger millisecond;
 @property (readonly, nonatomic) BOOL hasSecond;
 @property (readonly, nonatomic) BOOL hasMillisecond;
 
@@ -55,12 +55,12 @@
 // Initializers
 //
 //-------------------------
--(id) initWithHour:(int) hour minute:(int) minute;
--(id) initWithHour:(int) hour minute:(int) minute second:(int) second;
+-(id) initWithHour:(NSInteger) hour minute:(NSInteger) minute;
+-(id) initWithHour:(NSInteger) hour minute:(NSInteger) minute second:(NSInteger) second;
 -(id) initWithDate:(NSDate *) date;
 -(id) initwithComponents:(NSDateComponents *) components;
 
-+(HVTime *) fromHour:(int) hour andMinute:(int)minute;
++(HVTime *) fromHour:(NSInteger) hour andMinute:(NSInteger)minute;
 
 //-------------------------
 //

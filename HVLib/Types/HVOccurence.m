@@ -34,7 +34,7 @@ static NSString* const c_element_minutes = @"minutes";
     [super dealloc];
 }
 
--(id)initForDuration:(int)minutes startingAt:(HVTime *)time
+-(id)initForDuration:(NSInteger)minutes startingAt:(HVTime *)time
 {
     HVCHECK_NOTNULL(time);
     
@@ -52,7 +52,7 @@ LError:
     HVALLOC_FAIL;
 }
 
--(id)initForDuration:(int)minutes startingAtHour:(int)hour andMinute:(int)minute
+-(id)initForDuration:(NSInteger)minutes startingAtHour:(NSInteger)hour andMinute:(NSInteger)minute
 {
     HVTime* time = [[HVTime alloc] initWithHour:hour minute:minute];
     HVCHECK_NOTNULL(time);
@@ -66,7 +66,7 @@ LError:
     HVALLOC_FAIL;
 }
 
-+(HVOccurence *)forDuration:(int)minutes atHour:(int)hour andMinute:(int)minute
++(HVOccurence *)forDuration:(NSInteger)minutes atHour:(NSInteger)hour andMinute:(NSInteger)minute
 {
     return [[[HVOccurence alloc] initForDuration:minutes startingAtHour:hour andMinute:minute] autorelease];
 }

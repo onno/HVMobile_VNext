@@ -62,9 +62,9 @@
 //
 // Convenience properties
 //
-@property (readwrite, nonatomic) int systolicValue;
-@property (readwrite, nonatomic) int diastolicValue;
-@property (readwrite, nonatomic) int pulseValue;
+@property (readwrite, nonatomic) NSInteger systolicValue;
+@property (readwrite, nonatomic) NSInteger diastolicValue;
+@property (readwrite, nonatomic) NSInteger pulseValue;
 
 
 //-------------------------
@@ -73,9 +73,9 @@
 //
 //-------------------------
 
--(id) initWithSystolic:(int) sVal diastolic:(int) dVal;
--(id) initWithSystolic:(int) sVal diastolic:(int) dVal andDate:(NSDate*) date;
--(id) initWithSystolic:(int) sVal diastolic:(int) dVal pulse:(int) pVal;
+-(id) initWithSystolic:(NSInteger) sVal diastolic:(NSInteger) dVal;
+-(id) initWithSystolic:(NSInteger) sVal diastolic:(NSInteger) dVal andDate:(NSDate*) date;
+-(id) initWithSystolic:(NSInteger) sVal diastolic:(NSInteger) dVal pulse:(NSInteger) pVal;
 +(HVItem *) newItem;
 
 

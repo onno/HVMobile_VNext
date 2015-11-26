@@ -185,7 +185,7 @@ LError:
     HVHttpRequestResponse* putTask = (HVHttpRequestResponse *) task;
     [putTask checkSuccess];
     
-    int chunkLength = putTask.requestBody.length;
+    NSUInteger chunkLength = putTask.requestBody.length;
     [self totalBytesWritten:chunkLength];  // Notify delegates that we've completed writing these many bytes
     
     m_byteCountUploaded += chunkLength;

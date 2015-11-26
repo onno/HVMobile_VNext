@@ -59,7 +59,7 @@ enum HVItemFlags
     HVItemKey* m_key;
     HVItemType* m_type;
     enum HVItemState m_state;
-    int m_flags;
+    NSInteger m_flags;
     NSDate* m_effectiveDate;
     HVAudit* m_created;
     HVAudit* m_updated;    
@@ -87,7 +87,7 @@ enum HVItemFlags
 //
 // (Optional) See HVItemFlags enumeration...
 //
-@property (readwrite, nonatomic) int flags;
+@property (readwrite, nonatomic) NSInteger flags;
 //
 // 
 // The effective date impacts the default sort order of returned results

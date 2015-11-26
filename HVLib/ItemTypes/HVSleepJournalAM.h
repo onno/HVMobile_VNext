@@ -88,8 +88,8 @@ enum HVWakeState
 // Convenience
 //
 @property (readonly, nonatomic) BOOL hasAwakenings;
-@property (readwrite, nonatomic) int sleepMinutesValue;
-@property (readwrite, nonatomic) int settlingMinutesValue;
+@property (readwrite, nonatomic) NSInteger sleepMinutesValue;
+@property (readwrite, nonatomic) NSInteger settlingMinutesValue;
 
 //-------------------------
 //
@@ -97,7 +97,7 @@ enum HVWakeState
 //
 //-------------------------
 
--(id)initWithBedtime:(NSDate *)bedtime onDate :(NSDate *)date settlingMinutes:(int) settlingMinutes sleepingMinutes:(int) sleepingMinutes wokeupAt:(NSDate *) wakeTime;
+-(id)initWithBedtime:(NSDate *)bedtime onDate :(NSDate *)date settlingMinutes:(NSInteger) settlingMinutes sleepingMinutes:(NSInteger) sleepingMinutes wokeupAt:(NSDate *) wakeTime;
 
 +(HVItem *) newItem;
 

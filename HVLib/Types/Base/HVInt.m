@@ -23,7 +23,7 @@
 
 @synthesize value = m_value;
 
--(id) initWith:(int)value
+-(id) initWith:(NSInteger)value
 {
     self = [super init];
     HVCHECK_SELF;
@@ -61,7 +61,7 @@ LError:
     m_value = [reader readInt];
 }
 
-+(HVInt *)fromInt:(int)value
++(HVInt *)fromInt:(NSInteger)value
 {
     return [[[HVInt alloc] initWith:value] autorelease];
 }

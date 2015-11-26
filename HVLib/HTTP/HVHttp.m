@@ -38,7 +38,7 @@ LError:
     HVALLOC_FAIL;
 }
 
--(id)initWithStatusCode:(int)statusCode
+-(id)initWithStatusCode:(NSInteger)statusCode
 {
     self = [super initWithName:@"HVHttpException" reason:[NSHTTPURLResponse localizedStringForStatusCode:m_statusCode] userInfo:nil];
     HVCHECK_SELF;
@@ -82,13 +82,14 @@ static NSString* const c_header_contentRange = @"Content-Range";
 
 -(void)setContentLength:(NSUInteger)length
 {
-    NSString* value = [NSString stringWithFormat: @"%d", length];
+    NSString* value = [NSString stringWithFormat: @"%lu", (unsigned long)length];
     [self setValue:value forHTTPHeaderField:c_header_contentLength];
 }
 
 -(void) setContentRangeStart:(NSUInteger) start end:(NSUInteger) end
 {
-    NSString* value = [NSString stringWithFormat:@"bytes %d-%d/*", start, end];
+    NSString* value = [NSString stringWithFormat:@"bytes %lu-%lu/*",
+                       (unsigned long)start, (unsigned long)end];
     [self setValue:value forHTTPHeaderField:c_header_contentRange];
 }
 

@@ -55,45 +55,45 @@ double const c_triglyceridesMolarMass = 885.7; // g/mol
     return [m_date toDateForCalendar:calendar];
 }
 
--(int)ldlValue
+-(NSInteger)ldlValue
 {
     return (m_ldl) ? m_ldl.value : -1;
 }
 
--(void)setLdlValue:(int)ldl
+-(void)setLdlValue:(NSInteger)ldl
 {
     HVENSURE(m_ldl, HVPositiveInt);
     m_ldl.value = ldl;
 }
 
--(int) hdlValue
+-(NSInteger) hdlValue
 {
     return (m_hdl) ? m_hdl.value : -1;
 }
 
--(void)setHdlValue:(int)hdl
+-(void)setHdlValue:(NSInteger)hdl
 {
     HVENSURE(m_hdl, HVPositiveInt);
     m_hdl.value = hdl;        
 }
 
--(int) triglyceridesValue
+-(NSInteger) triglyceridesValue
 {
     return (m_triglycerides) ? m_triglycerides.value : -1;
 }
 
--(void)setTriglyceridesValue:(int)triglycerides
+-(void)setTriglyceridesValue:(NSInteger)triglycerides
 {
     HVENSURE(m_triglycerides, HVPositiveInt);
     m_triglycerides.value = triglycerides;       
 }
 
--(int)totalValue
+-(NSInteger)totalValue
 {
     return (m_total) ? m_total.value : -1;
 }
 
--(void)setTotalValue:(int)total
+-(void)setTotalValue:(NSInteger)total
 {
     HVENSURE(m_total, HVPositiveInt);
     m_total.value = total;

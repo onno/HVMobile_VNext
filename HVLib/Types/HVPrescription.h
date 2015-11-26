@@ -45,8 +45,8 @@
 @property (readwrite, nonatomic, retain) HVApproxDateTime* datePrescribed;
 @property (readwrite, nonatomic, retain) HVApproxMeasurement* amount;
 @property (readwrite, nonatomic, retain) HVCodableValue* substitution;
-@property (readwrite, nonatomic) int refills;
-@property (readwrite, nonatomic) int daysSupply;
+@property (readwrite, nonatomic) NSInteger refills;
+@property (readwrite, nonatomic) NSInteger daysSupply;
 @property (readwrite, nonatomic, retain) HVDate* expirationDate;
 @property (readwrite, nonatomic, retain) HVCodableValue* instructions;
 

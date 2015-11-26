@@ -74,7 +74,7 @@ LError:
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    int statusCode = [((NSHTTPURLResponse *)m_response) statusCode];
+    NSInteger statusCode = [((NSHTTPURLResponse *)m_response) statusCode];
     if (statusCode >= 400)
     {       
         HVHttpException* ex = [[HVHttpException alloc] initWithStatusCode:statusCode];

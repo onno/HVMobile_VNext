@@ -26,11 +26,11 @@
     return [self validateValue:m_value];
 }
 
--(int) min
+-(NSInteger) min
 {
     return INT32_MIN;
 }
--(int) max
+-(NSInteger) max
 {
     return INT32_MAX;
 }
@@ -45,7 +45,7 @@ LError:
     return HVMAKE_ERROR(HVClientError_ValueOutOfRange);
 }
 
--(BOOL) validateValue:(int)value
+-(BOOL) validateValue:(NSInteger)value
 {
     return(self.min <= value && value <= self.max);
 }

@@ -55,10 +55,10 @@ enum HVServerStatusCode
 @interface HVServerResponseStatus : NSObject
 {
 @private
-    int m_statusCode;
+    NSInteger m_statusCode;
     NSString* m_errorText;
     NSString* m_errorDetails;
-    int m_webStatusCode;
+    NSInteger m_webStatusCode;
 }
 
 -(id) initWithStatusCode:(enum HVServerStatusCode) code;
@@ -69,13 +69,13 @@ enum HVServerStatusCode
 // other failure, but not a HealthVault failure. 
 //
 @property (readonly, nonatomic) BOOL isHVError;
-@property (readwrite, nonatomic) int statusCode;
+@property (readwrite, nonatomic) NSInteger statusCode;
 @property (readwrite, nonatomic, retain) NSString* errorText;
 @property (readwrite, nonatomic, retain) NSString* errorDetailsXml;
 //
 // Web result code, if any
 //
-@property (readwrite, nonatomic) int webStatusCode;
+@property (readwrite, nonatomic) NSInteger webStatusCode;
 
 @property (readonly, nonatomic) BOOL isWebError;
 @property (readonly, nonatomic) BOOL isAccessDenied;

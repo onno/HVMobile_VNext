@@ -48,10 +48,10 @@
 //
 //-------------------------
 
--(id) initForDuration:(int)minutes startingAt:(HVTime *) time;
--(id) initForDuration:(int)minutes startingAtHour:(int) hour andMinute:(int) minute;
+-(id) initForDuration:(NSInteger)minutes startingAt:(HVTime *) time;
+-(id) initForDuration:(NSInteger)minutes startingAtHour:(NSInteger) hour andMinute:(NSInteger) minute;
 
-+(HVOccurence *) forDuration:(int) minutes atHour:(int) hour andMinute:(int) minute;
++(HVOccurence *) forDuration:(NSInteger) minutes atHour:(NSInteger) hour andMinute:(NSInteger) minute;
 
 @end
 

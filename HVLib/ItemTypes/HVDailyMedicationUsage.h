@@ -70,16 +70,16 @@
 //
 // Convenience
 //
-@property (readwrite, nonatomic) int dosesConsumedValue;
-@property (readwrite, nonatomic) int dosesIntendedValue;
+@property (readwrite, nonatomic) NSInteger dosesConsumedValue;
+@property (readwrite, nonatomic) NSInteger dosesIntendedValue;
 
 //-------------------------
 //
 // Initializers
 //
 //-------------------------
--(id) initWithDoses:(int) doses forDrug:(HVCodableValue *) drug onDay:(NSDate *) day;
--(id) initWithDoses:(int)doses forDrug:(HVCodableValue *)drug onDate:(HVDate *)date;
+-(id) initWithDoses:(NSInteger) doses forDrug:(HVCodableValue *) drug onDay:(NSDate *) day;
+-(id) initWithDoses:(NSInteger)doses forDrug:(HVCodableValue *)drug onDate:(HVDate *)date;
 
 +(HVItem *) newItem;
 

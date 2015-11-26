@@ -20,7 +20,7 @@
 
 @implementation HVNonNegativeInt
 
--(int) min
+-(NSInteger) min
 {
     return 0;
 }

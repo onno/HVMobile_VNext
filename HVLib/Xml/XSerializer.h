@@ -72,7 +72,7 @@ NSString* const XExceptionNotSerializable;
 -(NSString *) readValueEnsure;
 
 -(CFUUIDRef) readGuid;
--(int) readInt;
+-(NSInteger) readInt;
 -(double) readDouble;
 -(float) readFloat;
 -(BOOL) readBool;
@@ -85,9 +85,9 @@ NSString* const XExceptionNotSerializable;
 -(NSDate *) readNextDate;
 -(NSDate *) readDateElement:(NSString *) name;
 
--(int) readNextInt;
--(int) readIntElement:(NSString *) name;
--(BOOL) readIntElement:(NSString *) name into:(int *) value;
+-(NSInteger) readNextInt;
+-(NSInteger) readIntElement:(NSString *) name;
+-(BOOL) readIntElement:(NSString *) name into:(NSInteger *) value;
 
 -(double) readNextDouble;
 -(double) readDoubleElement:(NSString *) name;
@@ -115,7 +115,7 @@ NSString* const XExceptionNotSerializable;
 -(NSMutableArray *) readRawElementArray:(NSString *) name;
 
 -(NSString *) readAttribute:(NSString *) name;
--(BOOL) readIntAttribute:(NSString *) name intValue:(int *) value;
+-(BOOL) readIntAttribute:(NSString *) name intValue:(NSInteger *) value;
 -(BOOL) readBoolAttribute:(NSString *) name boolValue:(BOOL *) value;
 -(BOOL) readDoubleAttribute:(NSString *) name doubleValue:(double *) value;
 -(BOOL) readFloatAttribute:(NSString *) name floatValue:(float *) value;
@@ -138,8 +138,8 @@ NSString* const XExceptionNotSerializable;
 -(NSDate *) readDateElementXmlName:(const xmlChar *) xmlName;
 -(double) readDoubleElementXmlName:(const xmlChar *) xmlName;
 -(BOOL) readDoubleElementXmlName:(const xmlChar *) xmlName into:(double *) value;
--(int) readIntElementXmlName:(const xmlChar *) xmlName;
--(BOOL) readIntElementXmlName:(const xmlChar *) xmlName into:(int *) value;
+-(NSInteger) readIntElementXmlName:(const xmlChar *) xmlName;
+-(BOOL) readIntElementXmlName:(const xmlChar *) xmlName into:(NSInteger *) value;
 -(BOOL) readBoolElementXmlName:(const xmlChar*) xmlName;
 -(BOOL) readBoolElementXmlName:(const xmlChar *) xmlName into:(BOOL *) value;
 
@@ -161,7 +161,7 @@ NSString* const XExceptionNotSerializable;
 @interface XWriter (XSerializer) 
 
 -(void) writeGuid:(CFUUIDRef) guid;
--(void) writeInt:(int) value;
+-(void) writeInt:(NSInteger) value;
 -(void) writeDouble:(double) value;
 -(void) writeFloat:(float) value;
 -(void) writeBool:(BOOL) value;
@@ -174,7 +174,7 @@ NSString* const XExceptionNotSerializable;
 
 -(void) writeElement:(NSString *)name value:(NSString *) value;
 -(void) writeElement:(NSString *) name content:(id<XSerializable>) content; 
--(void) writeElement:(NSString *) name intValue:(int) value;
+-(void) writeElement:(NSString *) name intValue:(NSInteger) value;
 -(void) writeElement:(NSString *) name doubleValue:(double) value;
 -(void) writeElement:(NSString *) name dateValue:(NSDate*) value;
 -(void) writeElement:(NSString *) name boolValue:(BOOL) value;
@@ -189,12 +189,12 @@ NSString* const XExceptionNotSerializable;
 -(void) writeElementArray:(NSString *)name itemName:(NSString*) itemName elements:(NSArray *)array;
 -(void) writeRawElementArray:(NSString *) name elements:(NSArray *) array;
 
--(void) writeAttribute:(NSString *) name intValue:(int) value;
+-(void) writeAttribute:(NSString *) name intValue:(NSInteger) value;
 -(void) writeText:(NSString *) value;
 
 -(void) writeElementXmlName:(const xmlChar *) xmlName content:(id<XSerializable>) content;
 -(void) writeElementXmlName:(const xmlChar *)xmlName value:(NSString *) value;
--(void) writeElementXmlName:(const xmlChar *) xmlName intValue:(int) value;
+-(void) writeElementXmlName:(const xmlChar *) xmlName intValue:(NSInteger) value;
 -(void) writeElementXmlName:(const xmlChar *) xmlName doubleValue:(double) value;
 -(void) writeElementXmlName:(const xmlChar *) xmlName dateValue:(NSDate*) value;
 -(void) writeElementXmlName:(const xmlChar *) xmlName boolValue:(BOOL) value;

@@ -86,7 +86,7 @@ LError:
     return FALSE;
 }
 
--(int) stringToInt:(NSString *)source
+-(NSInteger) stringToInt:(NSString *)source
 {
     int value = 0;
     if (![self tryString:source toInt:&value])
@@ -97,11 +97,11 @@ LError:
     return value;
 }
 
--(BOOL) tryInt:(int)source toString:(NSString **)result
+-(BOOL) tryInt:(NSInteger)source toString:(NSString **)result
 {
     HVCHECK_NOTNULL(result);
     
-    *result = [NSString stringWithFormat:@"%d", source];
+    *result = [NSString stringWithFormat:@"%ld", (long)source];
     HVCHECK_STRING(*result);
     
     return TRUE;
@@ -110,7 +110,7 @@ LError:
     return FALSE;
 }
 
--(NSString *) intToString:(int)source
+-(NSString *) intToString:(NSInteger)source
 {
     NSString *result;
     if (![self tryInt:source toString:&result])

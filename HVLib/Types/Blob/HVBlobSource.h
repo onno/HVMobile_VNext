@@ -28,7 +28,7 @@
 @protocol HVBlobSource <NSObject>
 
 @property (readonly, nonatomic) NSUInteger length;
--(NSData *) readStartAt:(int) offset chunkSize:(int) chunkSize;
+-(NSData *) readStartAt:(NSUInteger) offset chunkSize:(NSUInteger) chunkSize;
 
 @end
 

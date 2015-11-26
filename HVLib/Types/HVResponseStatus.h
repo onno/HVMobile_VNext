@@ -23,11 +23,11 @@
 @interface HVResponseStatus : HVType
 {
 @private
-    int m_code;
+    NSInteger m_code;
     HVServerError* m_error;
 }
 
-@property (readwrite, nonatomic) int code;
+@property (readwrite, nonatomic) NSInteger code;
 @property (readwrite, nonatomic, retain) HVServerError* error;
 @property (readonly, nonatomic) BOOL hasError;
 

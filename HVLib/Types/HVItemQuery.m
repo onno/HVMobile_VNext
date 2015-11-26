@@ -48,12 +48,12 @@ static NSString* const c_element_view = @"format";
     }
 }
 
--(int) maxResults
+-(NSInteger) maxResults
 {
     return (m_max) ? m_max.value : -1;
 }
 
--(void) setMaxResults:(int)maxResultsValue
+-(void) setMaxResults:(NSInteger)maxResultsValue
 {
     if (maxResultsValue >= 0)
     {
@@ -66,12 +66,12 @@ static NSString* const c_element_view = @"format";
     }
 }
 
--(int) maxFullResults
+-(NSInteger) maxFullResults
 {
     return (m_maxFull) ? m_maxFull.value : -1;
 }
 
--(void) setMaxFullResults:(int)maxFullResultsValue
+-(void) setMaxFullResults:(NSInteger)maxFullResultsValue
 {
     if (maxFullResultsValue >= 0)
     {
@@ -342,7 +342,7 @@ LError:
 {
     HVDESERIALIZE_ATTRIBUTE(m_name, c_attribute_name);
     
-    int intValue;
+    NSInteger intValue;
     if ([reader readIntAttribute:c_attribute_max intValue:&intValue])
     {
         self.maxResults = intValue;

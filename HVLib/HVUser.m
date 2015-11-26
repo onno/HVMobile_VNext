@@ -309,7 +309,7 @@ LError:
     HVDESERIALIZE_STRING(m_name, c_element_name);
     HVDESERIALIZE_TYPEDARRAYNESTED(m_records, c_element_recordarray, c_element_record, HVRecord, HVRecordCollection);
     
-    int index = 0;
+    NSInteger index = 0;
     HVDESERIALIZE_INT(index, c_element_current);
     m_currentIndex = index;
     

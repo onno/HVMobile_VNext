@@ -117,7 +117,7 @@ LError:
     HVDESERIALIZE_STRING_X(m_changeID, x_element_changeID);
     HVDESERIALIZE_DOUBLE_X(m_timestamp, x_element_timestamp);
     
-    int changeType;
+    NSInteger changeType;
     HVDESERIALIZE_INT_X(changeType, x_element_type);
     m_changeType = (enum HVItemChangeType) changeType;
     

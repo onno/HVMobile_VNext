@@ -109,7 +109,7 @@ LError:
 {
     HVCHECK_NOTNULL(view);
     
-    int max = range.location + range.length;
+    NSUInteger max = range.location + range.length;
     if (max > [view count])
     {
         max = [view count];

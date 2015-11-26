@@ -31,18 +31,18 @@ static const char _encodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn
 		return nil;
 	}
 	
-	int lenght = [dataToEncode length];
+	NSUInteger length = [dataToEncode length];
 	
 	// initializing output buffer
 	const unsigned char * input = [dataToEncode bytes];
 	
-	char *output = (char *)calloc(((lenght + 2) / 3) * 4, sizeof(char));	
+	char *output = (char *)calloc(((length + 2) / 3) * 4, sizeof(char));
 	char *outputPtr = output;
 	
 	// encoding
 	int currChar, prevChar; // current and previous characters
 
-	for (int idxInput = 0; idxInput < lenght; idxInput++) {
+	for (int idxInput = 0; idxInput < length; idxInput++) {
 		
 	    currChar = input[idxInput];		
 
@@ -67,7 +67,7 @@ static const char _encodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmn
 	
 	
 	// padding characters		
-	switch (lenght % 3) {
+	switch (length % 3) {
 			
 		case 1: 
 			*outputPtr++ = _encodingTable[(prevChar << 4) & 0x30];

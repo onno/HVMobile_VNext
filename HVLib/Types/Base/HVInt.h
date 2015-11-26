@@ -26,16 +26,16 @@
 @interface HVInt : HVType
 {
 @protected
-    int m_value;
+    NSInteger m_value;
 }
 
-@property (readwrite, nonatomic) int value;
+@property (readwrite, nonatomic) NSInteger value;
 
--(id) initWith:(int) value;
+-(id) initWith:(NSInteger) value;
 
 -(NSString *) toString;
 -(NSString *) toStringWithFormat:(NSString *) format;
 
-+(HVInt *) fromInt:(int) value;
++(HVInt *) fromInt:(NSInteger) value;
 
 @end

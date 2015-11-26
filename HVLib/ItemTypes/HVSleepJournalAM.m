@@ -74,23 +74,23 @@ static const xmlChar* x_element_state = XMLSTRINGCONST("wake-state");
     return ![NSArray isNilOrEmpty:m_awakenings];
 }
 
--(int)sleepMinutesValue
+-(NSInteger)sleepMinutesValue
 {
     return (m_sleepMinutes) ? m_sleepMinutes.value : -1;
 }
 
--(void)setSleepMinutesValue:(int)sleepMinutesValue
+-(void)setSleepMinutesValue:(NSInteger)sleepMinutesValue
 {
     HVENSURE(m_sleepMinutes, HVNonNegativeInt);
     m_sleepMinutes.value = sleepMinutesValue;
 }
 
--(int)settlingMinutesValue
+-(NSInteger)settlingMinutesValue
 {
     return m_settlingMinutes ? m_settlingMinutes.value : -1;
 }
 
--(void)setSettlingMinutesValue:(int)settlingMinutesValue
+-(void)setSettlingMinutesValue:(NSInteger)settlingMinutesValue
 {
     HVENSURE(m_settlingMinutes, HVNonNegativeInt);
     m_settlingMinutes.value = settlingMinutesValue;
@@ -110,7 +110,7 @@ static const xmlChar* x_element_state = XMLSTRINGCONST("wake-state");
     [super dealloc];
 }
 
--(id)initWithBedtime:(NSDate *)bedtime onDate:(NSDate *)date settlingMinutes:(int)settlingMinutes sleepingMinutes:(int)sleepingMinutes wokeupAt:(NSDate *)wakeTime
+-(id)initWithBedtime:(NSDate *)bedtime onDate:(NSDate *)date settlingMinutes:(NSInteger)settlingMinutes sleepingMinutes:(NSInteger)sleepingMinutes wokeupAt:(NSDate *)wakeTime
 {
     HVCHECK_NOTNULL(date);
     

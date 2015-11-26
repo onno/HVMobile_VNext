@@ -54,8 +54,8 @@
 //
 @property (readwrite, nonatomic, retain) HVItemView* view;
 
-@property (readwrite, nonatomic) int maxResults;
-@property (readwrite, nonatomic) int maxFullResults;
+@property (readwrite, nonatomic) NSInteger maxResults;
+@property (readwrite, nonatomic) NSInteger maxFullResults;
 
 -(id) initWithTypeID:(NSString *) typeID;
 -(id) initWithFilter:(HVItemFilter *) filter;

@@ -22,9 +22,9 @@
 @interface HVConstrainedInt : HVInt
 
 @property (readonly, nonatomic) BOOL inRange;
-@property (readonly, nonatomic) int min;
-@property (readonly, nonatomic) int max;
+@property (readonly, nonatomic) NSInteger min;
+@property (readonly, nonatomic) NSInteger max;
 
--(BOOL) validateValue:(int) value;
+-(BOOL) validateValue:(NSInteger) value;
 
 @end

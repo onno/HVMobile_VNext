@@ -160,7 +160,7 @@ LError:
 {
     if (self.isHVError)
     {
-        return [NSString stringWithFormat:@"[StatusCode=%d], %@", m_statusCode, m_errorText];
+        return [NSString stringWithFormat:@"[StatusCode=%ld], %@", (long)m_statusCode, m_errorText];
     }
     
     return m_errorText;
