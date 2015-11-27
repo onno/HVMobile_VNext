@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -253,7 +253,6 @@
 		5D6EDDB115463DB700420262 /* HVString1024.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EDDAF15463DB700420262 /* HVString1024.m */; };
 		5D74847E157A7C5E001A7713 /* HVStoredQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D74847C157A7C5E001A7713 /* HVStoredQuery.h */; };
 		5D74847F157A7C5E001A7713 /* HVStoredQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D74847D157A7C5E001A7713 /* HVStoredQuery.m */; };
-		5D76B9C914DCB92400BA865F /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D76B9C814DCB92400BA865F /* libxml2.2.dylib */; };
 		5D76B9D314DCC84C00BA865F /* HVValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D76B9D114DCC84C00BA865F /* HVValidator.h */; };
 		5D76B9D414DCC84C00BA865F /* HVValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D76B9D214DCC84C00BA865F /* HVValidator.m */; };
 		5D76B9D914DCC85B00BA865F /* HVStringExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D76B9D514DCC85B00BA865F /* HVStringExtensions.h */; };
@@ -510,6 +509,511 @@
 		5DF90BEF19059AA9009ABAAB /* HVSyncView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BED19059AA9009ABAAB /* HVSyncView.h */; };
 		5DF91081158D09930027E0A8 /* HVNonNegativeDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF9107F158D09930027E0A8 /* HVNonNegativeDouble.h */; };
 		5DF91082158D09930027E0A8 /* HVNonNegativeDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF91080158D09930027E0A8 /* HVNonNegativeDouble.m */; };
+		9C7280DB1C0753870011CF4B /* HVKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C7280DA1C0753870011CF4B /* HVKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C7280E01C0753AE0011CF4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1D461C1597976800383979 /* Security.framework */; };
+		9C7280E11C0753B50011CF4B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5F3111150E95E700ED11E7 /* UIKit.framework */; };
+		9C7280E21C0753BD0011CF4B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5299AF14DCB3A700D2636E /* Foundation.framework */; };
+		9C7280E31C0753C60011CF4B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB083D518F3176100702B79 /* SystemConfiguration.framework */; };
+		9C7280E51C0753EC0011CF4B /* HVArrayExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE382FA14E338C900DFA11D /* HVArrayExtensions.m */; };
+		9C7280E71C0753EC0011CF4B /* HVAsyncTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C4F15017CC20078D85F /* HVAsyncTask.m */; };
+		9C7280E91C0753EC0011CF4B /* HVBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D311728150FE26600B8F3D7 /* HVBlock.m */; };
+		9C7280EB1C0753EC0011CF4B /* HVClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C5B1506F6010078D85F /* HVClient.m */; };
+		9C7280ED1C0753EC0011CF4B /* HVClientException.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BE114E5FE2A00C287B7 /* HVClientException.m */; };
+		9C7280EF1C0753EC0011CF4B /* HVClientResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF156614EB0986009D05D5 /* HVClientResult.m */; };
+		9C7280F11C0753EC0011CF4B /* HVClientSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F311A150E9A3D00ED11E7 /* HVClientSettings.m */; };
+		9C7280F21C0753EC0011CF4B /* HVCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3118150E9A3B00ED11E7 /* HVCommon.c */; };
+		9C7280F51C0753EC0011CF4B /* HVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DACB214E2FE14002CBE52 /* HVCore.m */; };
+		9C7280F71C0753EC0011CF4B /* HVDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1139BA15461F740008C362 /* HVDataExtensions.m */; };
+		9C7280F91C0753EC0011CF4B /* HVDateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF155614E9987F009D05D5 /* HVDateExtensions.m */; };
+		9C7280FB1C0753EC0011CF4B /* HVDictionaryExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4A93201635BC49007390B7 /* HVDictionaryExtensions.m */; };
+		9C7280FD1C0753EC0011CF4B /* HVExceptionExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D76B9D814DCC85B00BA865F /* HVExceptionExtensions.m */; };
+		9C7280FF1C0753EC0011CF4B /* HVKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D460C1596301A00383979 /* HVKeyChain.m */; };
+		9C7281011C0753EC0011CF4B /* HVLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D76B9EA14DCC9F400BA865F /* HVLib.m */; };
+		9C7281041C0753EC0011CF4B /* HVRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC44B7B14FEA3E600E2E02F /* HVRandom.m */; };
+		9C7281061C0753EC0011CF4B /* HVRecordReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D39F9311513FFC500208A7B /* HVRecordReference.m */; };
+		9C7281081C0753EC0011CF4B /* HVServerResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D39F92A1513AA5F00208A7B /* HVServerResponseStatus.m */; };
+		9C72810A1C0753EC0011CF4B /* HVStringExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D76B9D614DCC85B00BA865F /* HVStringExtensions.m */; };
+		9C72810C1C0753EC0011CF4B /* HVUIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE57A1A1510F75300829CC2 /* HVUIAlert.m */; };
+		9C7281101C0753EC0011CF4B /* HVValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D76B9D214DCC84C00BA865F /* HVValidator.m */; };
+		9C7281121C0753F90011CF4B /* XConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3830314E4447800DFA11D /* XConverter.m */; };
+		9C7281141C0753F90011CF4B /* XException.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3830514E4447800DFA11D /* XException.m */; };
+		9C7281181C0753F90011CF4B /* XReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3830914E4447800DFA11D /* XReader.m */; };
+		9C72811A1C0753F90011CF4B /* XString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3830B14E4447800DFA11D /* XString.m */; };
+		9C72811C1C0753F90011CF4B /* XWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D1C5C14E4A4F400C85B7E /* XWriter.m */; };
+		9C72811D1C0753F90011CF4B /* XNodeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D1C6014E4AC9B00C85B7E /* XNodeType.m */; };
+		9C72811F1C0753F90011CF4B /* XSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BD214E5CA3300C287B7 /* XSerializer.m */; };
+		9C7281211C0753F90011CF4B /* XSerializableType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0B80914F81DDE00AAD54F /* XSerializableType.m */; };
+		9C7281241C0754010011CF4B /* HVTypeViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D119D9F18F46771005117E0 /* HVTypeViewDataSource.m */; };
+		9C7281261C0754010011CF4B /* HVSynchronizedTypeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D119E2F18F49098005117E0 /* HVSynchronizedTypeDataSource.m */; };
+		9C7281281C0754010011CF4B /* HVUITaskAwareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BB218F86663009ABAAB /* HVUITaskAwareViewController.m */; };
+		9C72812A1C0754120011CF4B /* HVAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D0E151BEBA000E109AD /* HVAddress.m */; };
+		9C72812C1C0754120011CF4B /* HVApproxDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E5AB4152FC551002BC6E2 /* HVApproxDate.m */; };
+		9C72812E1C0754120011CF4B /* HVApproxDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B4BE5151A80A4000849D0 /* HVApproxDateTime.m */; };
+		9C7281301C0754120011CF4B /* HVApproxMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D02151BC72C00E109AD /* HVApproxMeasurement.m */; };
+		9C7281321C0754120011CF4B /* HVAssessmentField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C8E1538E9B9000F01AE /* HVAssessmentField.m */; };
+		9C7281341C0754120011CF4B /* HVAudit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D34214F44EEC00160611 /* HVAudit.m */; };
+		9C7281361C0754120011CF4B /* HVBloodGlucoseMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7996B1534CB0E00193A3B /* HVBloodGlucoseMeasurement.m */; };
+		9C7281381C0754120011CF4B /* HVCodableValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF157214EC2456009D05D5 /* HVCodableValue.m */; };
+		9C72813A1C0754120011CF4B /* HVCodedValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF156E14EC2430009D05D5 /* HVCodedValue.m */; };
+		9C72813C1C0754120011CF4B /* HVConcentrationValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB6D501653FE59001BCB16 /* HVConcentrationValue.m */; };
+		9C72813E1C0754120011CF4B /* HVConditionEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F13301539EF0600524425 /* HVConditionEntry.m */; };
+		9C7281401C0754120011CF4B /* HVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D22151BF60F00E109AD /* HVContact.m */; };
+		9C7281421C0754120011CF4B /* HVDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BF514E6070500C287B7 /* HVDate.m */; };
+		9C7281441C0754120011CF4B /* HVDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF156A14EB180E009D05D5 /* HVDateTime.m */; };
+		9C7281461C0754120011CF4B /* HVDisplayValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2E514EDDEF400160611 /* HVDisplayValue.m */; };
+		9C7281481C0754120011CF4B /* HVDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE34C8915393C61003C24E8 /* HVDuration.m */; };
+		9C72814A1C0754120011CF4B /* HVEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D1E151BF54100E109AD /* HVEmail.m */; };
+		9C72814C1C0754120011CF4B /* HVFlowValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D18A4A0187361AB000AE3BD /* HVFlowValue.m */; };
+		9C72814E1C0754120011CF4B /* HVFoodEnergyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D88C5DF161F4EDF00F74D54 /* HVFoodEnergyValue.m */; };
+		9C7281501C0754120011CF4B /* HVGetAuthorizedPeopleResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC3C43615360123008BBDBF /* HVGetAuthorizedPeopleResult.m */; };
+		9C7281521C0754120011CF4B /* HVItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D31214F2F4F100160611 /* HVItem.m */; };
+		9C7281541C0754120011CF4B /* HVItemData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D32A14F42E0F00160611 /* HVItemData.m */; };
+		9C7281561C0754120011CF4B /* HVItemDataCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D32E14F4352500160611 /* HVItemDataCommon.m */; };
+		9C7281581C0754120011CF4B /* HVItemDataTyped.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BD714E5F4BD00C287B7 /* HVItemDataTyped.m */; };
+		9C72815A1C0754120011CF4B /* HVItemFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D30A14F2E22A00160611 /* HVItemFilter.m */; };
+		9C72815C1C0754120011CF4B /* HVItemKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D30614F2E21200160611 /* HVItemKey.m */; };
+		9C72815E1C0754120011CF4B /* HVItemQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2FD14EF3DC200160611 /* HVItemQuery.m */; };
+		9C7281601C0754120011CF4B /* HVItemQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D35614F4883100160611 /* HVItemQueryResult.m */; };
+		9C7281621C0754120011CF4B /* HVItemQueryResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D34E14F487BA00160611 /* HVItemQueryResults.m */; };
+		9C7281641C0754120011CF4B /* HVItemSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D31A14F2FA5600160611 /* HVItemSection.m */; };
+		9C7281661C0754120011CF4B /* HVItemState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D32214F304E400160611 /* HVItemState.m */; };
+		9C7281681C0754120011CF4B /* HVItemType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D32614F424EC00160611 /* HVItemType.m */; };
+		9C72816A1C0754120011CF4B /* HVItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D30E14F2E26600160611 /* HVItemView.m */; };
+		9C72816C1C0754120011CF4B /* HVLengthMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC799771534EC2E00193A3B /* HVLengthMeasurement.m */; };
+		9C72816E1C0754120011CF4B /* HVMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195CFE151BBC7D00E109AD /* HVMeasurement.m */; };
+		9C7281701C0754120011CF4B /* HVMessageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D66F18AC567800B29B6D /* HVMessageAttachment.m */; };
+		9C7281721C0754120011CF4B /* HVMessageHeaderItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D67118AC567800B29B6D /* HVMessageHeaderItem.m */; };
+		9C7281741C0754120011CF4B /* HVName.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D2A151BFA5200E109AD /* HVName.m */; };
+		9C7281761C0754120011CF4B /* HVNameValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC799731534E3EE00193A3B /* HVNameValue.m */; };
+		9C7281781C0754120011CF4B /* HVNutritionFact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D88C5E3161F4F1700F74D54 /* HVNutritionFact.m */; };
+		9C72817A1C0754120011CF4B /* HVOccurence.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE34C93153951FD003C24E8 /* HVOccurence.m */; };
+		9C72817C1C0754120011CF4B /* HVOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE34C8D15394313003C24E8 /* HVOrganization.m */; };
+		9C72817E1C0754120011CF4B /* HVPendingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D35214F487E600160611 /* HVPendingItem.m */; };
+		9C7281801C0754120011CF4B /* HVPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D26151BF9F300E109AD /* HVPerson.m */; };
+		9C7281821C0754120011CF4B /* HVPersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D34A14F4807D00160611 /* HVPersonInfo.m */; };
+		9C7281841C0754120011CF4B /* HVPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D12151BF01700E109AD /* HVPhone.m */; };
+		9C7281861C0754120011CF4B /* HVPrescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D362B54152F84FA006CC30C /* HVPrescription.m */; };
+		9C7281881C0754120011CF4B /* HVRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D34614F4804A00160611 /* HVRecord.m */; };
+		9C72818A1C0754120011CF4B /* HVRelatedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195CF9151B886000E109AD /* HVRelatedItem.m */; };
+		9C72818C1C0754120011CF4B /* HVRelative.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F13281539E9E000524425 /* HVRelative.m */; };
+		9C72818E1C0754120011CF4B /* HVTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF154E14E98DCA009D05D5 /* HVTime.m */; };
+		9C7281901C0754120011CF4B /* HVType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEF154914E985C5009D05D5 /* HVType.m */; };
+		9C7281931C0754120011CF4B /* HVVitalSignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C861538DED1000F01AE /* HVVitalSignResult.m */; };
+		9C7281951C0754120011CF4B /* HVVolumeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8183FC1875F9480073F8E6 /* HVVolumeValue.m */; };
+		9C7281971C0754120011CF4B /* HVWeightMeasurement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2E114EDD6C000160611 /* HVWeightMeasurement.m */; };
+		9C7281991C0754120011CF4B /* HVTestResultRangeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BD819005D5D009ABAAB /* HVTestResultRangeValue.m */; };
+		9C72819B1C0754120011CF4B /* HVTestResultRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BDC19005FF0009ABAAB /* HVTestResultRange.m */; };
+		9C72819D1C0754120011CF4B /* HVLabTestResultValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BE019006203009ABAAB /* HVLabTestResultValue.m */; };
+		9C72819F1C0754120011CF4B /* HVLabTestResultsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BD419005CA5009ABAAB /* HVLabTestResultsDetails.m */; };
+		9C7281A11C0754120011CF4B /* HVLabTestResultsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BE419008C62009ABAAB /* HVLabTestResultsGroup.m */; };
+		9C7281A31C0754120011CF4B /* HVServerError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1ACC8819104559000689FD /* HVServerError.m */; };
+		9C7281A51C0754120011CF4B /* HVResponseStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1ACC8019104056000689FD /* HVResponseStatus.m */; };
+		9C7281A71C0754120011CF4B /* HVResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1ACC7C19103C73000689FD /* HVResponse.m */; };
+		9C7281B61C0754350011CF4B /* HVConfigurationEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7898DE1714EEAA0015D375 /* HVConfigurationEntry.m */; };
+		9C7281B81C0754350011CF4B /* HVPlatformInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7898CC1714E9930015D375 /* HVPlatformInfo.m */; };
+		9C7281BA1C0754350011CF4B /* HVShellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7898F81715DD3A0015D375 /* HVShellInfo.m */; };
+		9C7281BC1C0754350011CF4B /* HVServiceDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7899011715E37E0015D375 /* HVServiceDefinition.m */; };
+		9C7281BE1C0754350011CF4B /* HVInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D78992C171727390015D375 /* HVInstance.m */; };
+		9C7281C01C0754350011CF4B /* HVSystemInstances.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D78993117172B960015D375 /* HVSystemInstances.m */; };
+		9C7281C31C0754430011CF4B /* HVVocabIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D227B86153766E500E12075 /* HVVocabIdentifier.m */; };
+		9C7281C51C0754430011CF4B /* HVVocabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D227B88153766E500E12075 /* HVVocabItem.m */; };
+		9C7281C71C0754430011CF4B /* HVVocabCodeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D227B8C153766E500E12075 /* HVVocabCodeSet.m */; };
+		9C7281C91C0754430011CF4B /* HVVocabSearchParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D227B8A153766E500E12075 /* HVVocabSearchParams.m */; };
+		9C7281CB1C0754430011CF4B /* HVVocabParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925DDF15377348006BAAA8 /* HVVocabParams.m */; };
+		9C7281CE1C07544F0011CF4B /* HVBlobInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EDDA71546306200420262 /* HVBlobInfo.m */; };
+		9C7281D01C07544F0011CF4B /* HVBlobPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D591CFB15464FD800EAC934 /* HVBlobPayload.m */; };
+		9C7281D21C07544F0011CF4B /* HVBlobPayloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EDDAB154631B700420262 /* HVBlobPayloadItem.m */; };
+		9C7281D41C07544F0011CF4B /* HVBlobHashInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1B7BEE154642F600854881 /* HVBlobHashInfo.m */; };
+		9C7281D61C07544F0011CF4B /* HVBlobPutParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BE474156B427F00718832 /* HVBlobPutParameters.m */; };
+		9C7281D81C07544F0011CF4B /* HVBlobSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8D504156D9FFF00CA119A /* HVBlobSource.m */; };
+		9C7281DB1C0754570011CF4B /* HVBool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2F914EEFF6B00160611 /* HVBool.m */; };
+		9C7281DD1C0754570011CF4B /* HVConstrainedDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2D914EDD32500160611 /* HVConstrainedDouble.m */; };
+		9C7281DF1C0754570011CF4B /* HVConstrainedInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BE514E6006400C287B7 /* HVConstrainedInt.m */; };
+		9C7281E11C0754570011CF4B /* HVConstrainedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D33214F4366000160611 /* HVConstrainedString.m */; };
+		9C7281E31C0754570011CF4B /* HVConstrainedXmlDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE74305174D31BC005F2D09 /* HVConstrainedXmlDate.m */; };
+		9C7281E51C0754570011CF4B /* HVDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BE914E6035900C287B7 /* HVDay.m */; };
+		9C7281E71C0754570011CF4B /* HVDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2F114EEF99300160611 /* HVDouble.m */; };
+		9C7281E91C0754570011CF4B /* HVEmailAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D1A151BF2E100E109AD /* HVEmailAddress.m */; };
+		9C7281EB1C0754570011CF4B /* HVGuid.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BB714E5949B00C287B7 /* HVGuid.m */; };
+		9C7281ED1C0754570011CF4B /* HVHour.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BFB14E984B500C287B7 /* HVHour.m */; };
+		9C7281EF1C0754570011CF4B /* HVInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2ED14EEF84400160611 /* HVInt.m */; };
+		9C7281F11C0754570011CF4B /* HVMillisecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983C0714E9850400C287B7 /* HVMillisecond.m */; };
+		9C7281F31C0754570011CF4B /* HVMinute.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BFF14E984CD00C287B7 /* HVMinute.m */; };
+		9C7281F51C0754570011CF4B /* HVMonth.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BED14E6038000C287B7 /* HVMonth.m */; };
+		9C7281F71C0754570011CF4B /* HVNonNegativeDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF91080158D09930027E0A8 /* HVNonNegativeDouble.m */; };
+		9C7281F91C0754570011CF4B /* HVNonNegativeInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2F514EEFA7500160611 /* HVNonNegativeInt.m */; };
+		9C7281FB1C0754570011CF4B /* HVOneToFive.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC799631534C97200193A3B /* HVOneToFive.m */; };
+		9C7281FD1C0754570011CF4B /* HVPositiveDouble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2DD14EDD5FE00160611 /* HVPositiveDouble.m */; };
+		9C7281FF1C0754570011CF4B /* HVPositiveInt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D57A8B5152F8A0C00A80C4A /* HVPositiveInt.m */; };
+		9C7282011C0754570011CF4B /* HVSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983C0314E984ED00C287B7 /* HVSecond.m */; };
+		9C7282031C0754570011CF4B /* HVString1024.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EDDAF15463DB700420262 /* HVString1024.m */; };
+		9C7282051C0754570011CF4B /* HVString255.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D33614F43A1200160611 /* HVString255.m */; };
+		9C7282071C0754570011CF4B /* HVStringZ512.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D33A14F43A9A00160611 /* HVStringZ512.m */; };
+		9C7282091C0754570011CF4B /* HVVocabSearchText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D7115228C0200E109AD /* HVVocabSearchText.m */; };
+		9C72820B1C0754570011CF4B /* HVYear.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BF114E6039C00C287B7 /* HVYear.m */; };
+		9C72820E1C07546D0011CF4B /* HVDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3125150EAD8400ED11E7 /* HVDirectory.m */; };
+		9C7282101C07546D0011CF4B /* HVDirectoryNameEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E71318D3BD950030972D /* HVDirectoryNameEnumerator.m */; };
+		9C7282121C07546D0011CF4B /* HVTypeViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C2C15003C2A0078D85F /* HVTypeViewItem.m */; };
+		9C7282141C07546D0011CF4B /* HVTypeViewItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C3015003C3D0078D85F /* HVTypeViewItems.m */; };
+		9C7282171C07546D0011CF4B /* HVTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C4315015EE60078D85F /* HVTypeView.m */; };
+		9C72821A1C07546D0011CF4B /* HVMemoryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C3F150051DC0078D85F /* HVMemoryStore.m */; };
+		9C72821C1C07546D0011CF4B /* HVSynchronizedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C47150160CD0078D85F /* HVSynchronizedStore.m */; };
+		9C72821E1C07546D0011CF4B /* HVLocalVault.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C5F1508049F0078D85F /* HVLocalVault.m */; };
+		9C7282201C07546D0011CF4B /* HVLocalItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D39F936151A3AA100208A7B /* HVLocalItemStore.m */; };
+		9C7282221C07546D0011CF4B /* HVLocalRecordStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D39F93A151A718A00208A7B /* HVLocalRecordStore.m */; };
+		9C7282241C07546D0011CF4B /* HVLocalVocabStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD216201556E18A001C8F31 /* HVLocalVocabStore.m */; };
+		9C7282261C07546D0011CF4B /* HVCachingObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D338B6015680894005A6C55 /* HVCachingObjectStore.m */; };
+		9C7282281C07546D0011CF4B /* HVStoredQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D74847D157A7C5E001A7713 /* HVStoredQuery.m */; };
+		9C72822A1C07546D0011CF4B /* HVDownloadItemsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D7D05C41639E83800D32AD5 /* HVDownloadItemsTask.m */; };
+		9C72822C1C07546D0011CF4B /* HVPartitionedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E71F18D3CBCF0030972D /* HVPartitionedStore.m */; };
+		9C72822E1C07546D0011CF4B /* HVLockTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E61318D22EA90030972D /* HVLockTable.m */; };
+		9C7282301C07546D0011CF4B /* HVWorkerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E73318D7905F0030972D /* HVWorkerStatus.m */; };
+		9C7282321C07546D0011CF4B /* HVItemChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E69318D2553B0030972D /* HVItemChange.m */; };
+		9C7282341C07546D0011CF4B /* HVItemChangeTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E69718D271F30030972D /* HVItemChangeTable.m */; };
+		9C7282361C07546D0011CF4B /* HVItemChangeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E6FA18D38E300030972D /* HVItemChangeManager.m */; };
+		9C7282381C07546D0011CF4B /* HVItemCommitErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E72318D4BF910030972D /* HVItemCommitErrorHandler.m */; };
+		9C72823A1C07546D0011CF4B /* HVItemCommitScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BAE18F85265009ABAAB /* HVItemCommitScheduler.m */; };
+		9C72823C1C07546D0011CF4B /* HVSynchronizedType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E73718D8B6F00030972D /* HVSynchronizedType.m */; };
+		9C72823E1C07546D0011CF4B /* HVSynchronizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E74C18DA3F870030972D /* HVSynchronizationManager.m */; };
+		9C7282401C07546D0011CF4B /* HVTypeViewRefresher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BBA18FC5719009ABAAB /* HVTypeViewRefresher.m */; };
+		9C7282421C07546D0011CF4B /* HVBatchItemDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BBE18FC80A5009ABAAB /* HVBatchItemDownloader.m */; };
+		9C7282451C07547B0011CF4B /* HVMethodFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAED4AC18E4BC960048ECBD /* HVMethodFactory.m */; };
+		9C7282471C07547B0011CF4B /* HVMethodCallTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D39F9261513A63500208A7B /* HVMethodCallTask.m */; };
+		9C7282491C07547B0011CF4B /* HVGetItemsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D39F92E1513E41200208A7B /* HVGetItemsTask.m */; };
+		9C72824B1C07547B0011CF4B /* HVPutItemsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D4D1522527100E109AD /* HVPutItemsTask.m */; };
+		9C72824D1C07547B0011CF4B /* HVRemoveItemsTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D651522780700E109AD /* HVRemoveItemsTask.m */; };
+		9C72824F1C07547B0011CF4B /* HVVocabSearchTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D811522973400E109AD /* HVVocabSearchTask.m */; };
+		9C7282511C07547B0011CF4B /* HVGetAuthorizedPeopleTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC799911535FEE300193A3B /* HVGetAuthorizedPeopleTask.m */; };
+		9C7282531C07547B0011CF4B /* HVGetVocabTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D925DD615376F21006BAAA8 /* HVGetVocabTask.m */; };
+		9C7282551C07547B0011CF4B /* HVGetPersonalImageTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D591D2B1547330100EAC934 /* HVGetPersonalImageTask.m */; };
+		9C7282571C07547B0011CF4B /* HVVocabSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E83721553000000072A0C /* HVVocabSearcher.m */; };
+		9C7282591C07547B0011CF4B /* HVBeginBlobPutTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BE478156B464400718832 /* HVBeginBlobPutTask.m */; };
+		9C72825B1C07547B0011CF4B /* HVBlobUploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BE47C156B483900718832 /* HVBlobUploadTask.m */; };
+		9C72825D1C07547B0011CF4B /* HVItemBlobUploadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4206C156C959200E1A473 /* HVItemBlobUploadTask.m */; };
+		9C72825F1C07547B0011CF4B /* HVRemoveRecordAuthTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D091279166EB7A60031F5F9 /* HVRemoveRecordAuthTask.m */; };
+		9C7282611C07547B0011CF4B /* HVGetServiceDefinitionTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D78990517160DFF0015D375 /* HVGetServiceDefinitionTask.m */; };
+		9C7282631C0754870011CF4B /* HVAllergy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E5AA6152FBBA4002BC6E2 /* HVAllergy.m */; };
+		9C7282651C0754870011CF4B /* HVAssessment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C921538EBF6000F01AE /* HVAssessment.m */; };
+		9C7282671C0754870011CF4B /* HVBasicDemographics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C7015389BD7000F01AE /* HVBasicDemographics.m */; };
+		9C7282691C0754870011CF4B /* HVBloodGlucose.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7995E1534C95A00193A3B /* HVBloodGlucose.m */; };
+		9C72826B1C0754870011CF4B /* HVBloodPressure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D2E914EDF16F00160611 /* HVBloodPressure.m */; };
+		9C72826D1C0754870011CF4B /* HVCCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D591D191547136D00EAC934 /* HVCCD.m */; };
+		9C72826F1C0754870011CF4B /* HVCCR.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D591D2115471A2800EAC934 /* HVCCR.m */; };
+		9C7282711C0754870011CF4B /* HVCholesterol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E5A9D152FA913002BC6E2 /* HVCholesterol.m */; };
+		9C7282731C0754870011CF4B /* HVCholesterolV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DDB6D5516540B4F001BCB16 /* HVCholesterolV2.m */; };
+		9C7282751C0754870011CF4B /* HVCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B4BE0151A7D50000849D0 /* HVCondition.m */; };
+		9C7282771C0754870011CF4B /* HVDailyDietaryIntake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D88C5DA161F4E5700F74D54 /* HVDailyDietaryIntake.m */; };
+		9C7282791C0754870011CF4B /* HVDailyMedicationUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C7E1538D2F8000F01AE /* HVDailyMedicationUsage.m */; };
+		9C72827B1C0754870011CF4B /* HVDietaryIntake.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F13371539FF6300524425 /* HVDietaryIntake.m */; };
+		9C72827D1C0754870011CF4B /* HVEmergencyOrProviderContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D561B0415365F74003D68D2 /* HVEmergencyOrProviderContact.m */; };
+		9C72827F1C0754870011CF4B /* HVEmotionalState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C821538D86A000F01AE /* HVEmotionalState.m */; };
+		9C7282811C0754870011CF4B /* HVEncounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE34C8515393B87003C24E8 /* HVEncounter.m */; };
+		9C7282831C0754870011CF4B /* HVExercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7997F1534FCD000193A3B /* HVExercise.m */; };
+		9C7282851C0754870011CF4B /* HVFamilyHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F132C1539EDF100524425 /* HVFamilyHistory.m */; };
+		9C7282871C0754870011CF4B /* HVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D591D0015465F5900EAC934 /* HVFile.m */; };
+		9C7282891C0754870011CF4B /* HVHeartRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0645B3184545D500D306CC /* HVHeartRate.m */; };
+		9C72828B1C0754870011CF4B /* HVHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7997B1534F3A200193A3B /* HVHeight.m */; };
+		9C72828D1C0754870011CF4B /* HVImmunization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E5AB0152FC45F002BC6E2 /* HVImmunization.m */; };
+		9C72828F1C0754870011CF4B /* HVInsurance.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC726091561E06C00734BC4 /* HVInsurance.m */; };
+		9C7282911C0754870011CF4B /* HVItemRaw.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D33E14F4467C00160611 /* HVItemRaw.m */; };
+		9C7282931C0754870011CF4B /* HVItemTestExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C23150019650078D85F /* HVItemTestExtensions.m */; };
+		9C7282951C0754870011CF4B /* HVItemTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C731538A118000F01AE /* HVItemTypes.m */; };
+		9C7282971C0754870011CF4B /* HVLabTestResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BE819009587009ABAAB /* HVLabTestResults.m */; };
+		9C7282991C0754870011CF4B /* HVMedication.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D195D06151BCAB400E109AD /* HVMedication.m */; };
+		9C72829B1C0754870011CF4B /* HVMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D25D67718AC574300B29B6D /* HVMessage.m */; };
+		9C72829D1C0754870011CF4B /* HVPeakFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8184001875FF060073F8E6 /* HVPeakFlow.m */; };
+		9C72829F1C0754870011CF4B /* HVPersonalContactInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C7A1538D04F000F01AE /* HVPersonalContactInfo.m */; };
+		9C7282A11C0754870011CF4B /* HVPersonalDemographics.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C761538C2B9000F01AE /* HVPersonalDemographics.m */; };
+		9C7282A31C0754870011CF4B /* HVPersonalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D591D271547242D00EAC934 /* HVPersonalImage.m */; };
+		9C7282A51C0754870011CF4B /* HVProcedure.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07A9561534B1780013DC2A /* HVProcedure.m */; };
+		9C7282A71C0754870011CF4B /* HVQuestionAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE34C7B153925F2003C24E8 /* HVQuestionAnswer.m */; };
+		9C7282A91C0754870011CF4B /* HVSleepJournalAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DE34C97153957AB003C24E8 /* HVSleepJournalAM.m */; };
+		9C7282AB1C0754870011CF4B /* HVSleepJournalPM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F13231539DD5200524425 /* HVSleepJournalPM.m */; };
+		9C7282AD1C0754870011CF4B /* HVVitalSigns.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D775C8A1538E430000F01AE /* HVVitalSigns.m */; };
+		9C7282AF1C0754870011CF4B /* HVWeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D983BDB14E5F50600C287B7 /* HVWeight.m */; };
+		9C7282B21C0754A50011CF4B /* HealthVaultRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F313D150FAA2800ED11E7 /* HealthVaultRecord.m */; };
+		9C7282B41C0754A50011CF4B /* HealthVaultRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F313F150FAA2800ED11E7 /* HealthVaultRequest.m */; };
+		9C7282B61C0754A50011CF4B /* HealthVaultResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3141150FAA2800ED11E7 /* HealthVaultResponse.m */; };
+		9C7282B81C0754A50011CF4B /* HealthVaultService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3143150FAA2800ED11E7 /* HealthVaultService.m */; };
+		9C7282BA1C0754A50011CF4B /* HVCryptographer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF90BCE19005044009ABAAB /* HVCryptographer.m */; };
+		9C7282BC1C0754A50011CF4B /* MobilePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3145150FAA2800ED11E7 /* MobilePlatform.m */; };
+		9C7282BE1C0754AF0011CF4B /* AuthenticationCheckState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3148150FAA2800ED11E7 /* AuthenticationCheckState.m */; };
+		9C7282C01C0754AF0011CF4B /* Provisioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F314A150FAA2800ED11E7 /* Provisioner.m */; };
+		9C7282C21C0754B60011CF4B /* HealthVaultSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F314D150FAA2800ED11E7 /* HealthVaultSettings.m */; };
+		9C7282C41C0754BD0011CF4B /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3150150FAA2800ED11E7 /* Base64.m */; };
+		9C7282C61C0754BD0011CF4B /* DateTimeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3152150FAA2800ED11E7 /* DateTimeUtils.m */; };
+		9C7282C81C0754BD0011CF4B /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3154150FAA2800ED11E7 /* Logger.m */; };
+		9C7282CA1C0754C60011CF4B /* HVHttpTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB2E60F18D223120030972D /* HVHttpTransport.m */; };
+		9C7282CC1C0754C60011CF4B /* WebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3157150FAA2800ED11E7 /* WebResponse.m */; };
+		9C7282CE1C0754C60011CF4B /* WebTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3159150FAA2800ED11E7 /* WebTransport.m */; };
+		9C7282D01C0754CD0011CF4B /* XmlElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F315C150FAA2800ED11E7 /* XmlElement.m */; };
+		9C7282D21C0754CD0011CF4B /* XmlTextReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F315E150FAA2800ED11E7 /* XmlTextReader.m */; };
+		9C7282D41C0754DC0011CF4B /* HVHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1139B615461F430008C362 /* HVHttp.m */; };
+		9C7282D61C0754DC0011CF4B /* HVHttpRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1139BE154620E80008C362 /* HVHttpRequestResponse.m */; };
+		9C7282D81C0754DC0011CF4B /* HVHttpDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6EDDA11546233F00420262 /* HVHttpDownload.m */; };
+		9C7282DA1C0754DC0011CF4B /* HVNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB083E518F325FD00702B79 /* HVNetworkReachability.m */; };
+		9C7282DC1C0754E20011CF4B /* HVBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F312F150ED29F00ED11E7 /* HVBrowserController.m */; };
+		9C7282DE1C0754E20011CF4B /* HVAppProvisionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F3183150FAE5300ED11E7 /* HVAppProvisionController.m */; };
+		9C7282E01C0754E80011CF4B /* HVCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D20D30214EF414500160611 /* HVCollection.m */; };
+		9C7282E21C0754E80011CF4B /* HVMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC50C4B150172610078D85F /* HVMulticastDelegate.m */; };
+		9C7282FD1C0764A20011CF4B /* HVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D97B93B1511743C0004B551 /* HVUser.m */; };
+		9C7283041C076E710011CF4B /* HVCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D30114EF414500160611 /* HVCollection.h */; };
+		9C7283051C076E710011CF4B /* HVMulticastDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C4A150172610078D85F /* HVMulticastDelegate.h */; };
+		9C7283061C076E710011CF4B /* HVBrowserController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F312E150ED29F00ED11E7 /* HVBrowserController.h */; };
+		9C7283071C076E710011CF4B /* HVAppProvisionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3182150FAE5200ED11E7 /* HVAppProvisionController.h */; };
+		9C7283081C076E710011CF4B /* HVHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1139B515461F430008C362 /* HVHttp.h */; };
+		9C7283091C076E710011CF4B /* HVHttpRequestResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1139BD154620E80008C362 /* HVHttpRequestResponse.h */; };
+		9C72830A1C076E710011CF4B /* HVHttpDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6EDDA01546233F00420262 /* HVHttpDownload.h */; };
+		9C72830B1C076E710011CF4B /* HVNetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB083E418F325FD00702B79 /* HVNetworkReachability.h */; };
+		9C72830C1C076E710011CF4B /* HealthVaultConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F313B150FAA2800ED11E7 /* HealthVaultConfig.h */; };
+		9C72830D1C076E710011CF4B /* HealthVaultRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F313C150FAA2800ED11E7 /* HealthVaultRecord.h */; };
+		9C72830E1C076E710011CF4B /* HealthVaultRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F313E150FAA2800ED11E7 /* HealthVaultRequest.h */; };
+		9C72830F1C076E710011CF4B /* HealthVaultResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3140150FAA2800ED11E7 /* HealthVaultResponse.h */; };
+		9C7283101C076E710011CF4B /* HVService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BD219005347009ABAAB /* HVService.h */; };
+		9C7283111C076E710011CF4B /* HealthVaultService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3142150FAA2800ED11E7 /* HealthVaultService.h */; };
+		9C7283121C076E710011CF4B /* HVCryptographer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BCD19005044009ABAAB /* HVCryptographer.h */; };
+		9C7283131C076E710011CF4B /* MobilePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3144150FAA2800ED11E7 /* MobilePlatform.h */; };
+		9C7283141C076E710011CF4B /* AuthenticationCheckState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3147150FAA2800ED11E7 /* AuthenticationCheckState.h */; };
+		9C7283151C076E710011CF4B /* Provisioner.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3149150FAA2800ED11E7 /* Provisioner.h */; };
+		9C7283161C076E710011CF4B /* HealthVaultSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F314C150FAA2800ED11E7 /* HealthVaultSettings.h */; };
+		9C7283171C076E710011CF4B /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F314F150FAA2800ED11E7 /* Base64.h */; };
+		9C7283181C076E710011CF4B /* DateTimeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3151150FAA2800ED11E7 /* DateTimeUtils.h */; };
+		9C7283191C076E710011CF4B /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3153150FAA2800ED11E7 /* Logger.h */; };
+		9C72831A1C076E710011CF4B /* HVHttpTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E60E18D223120030972D /* HVHttpTransport.h */; };
+		9C72831B1C076E710011CF4B /* WebResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3156150FAA2800ED11E7 /* WebResponse.h */; };
+		9C72831C1C076E710011CF4B /* WebTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3158150FAA2800ED11E7 /* WebTransport.h */; };
+		9C72831D1C076E710011CF4B /* XmlElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F315B150FAA2800ED11E7 /* XmlElement.h */; };
+		9C72831E1C076E710011CF4B /* XmlTextReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F315D150FAA2800ED11E7 /* XmlTextReader.h */; };
+		9C72831F1C076E710011CF4B /* HVAllergy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8E5AA5152FBBA3002BC6E2 /* HVAllergy.h */; };
+		9C7283201C076E710011CF4B /* HVAssessment.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C911538EBF5000F01AE /* HVAssessment.h */; };
+		9C7283211C076E710011CF4B /* HVBasicDemographics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C6F15389BD7000F01AE /* HVBasicDemographics.h */; };
+		9C7283221C076E710011CF4B /* HVBloodGlucose.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC7995D1534C95A00193A3B /* HVBloodGlucose.h */; };
+		9C7283231C076E710011CF4B /* HVBloodPressure.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2E814EDF16F00160611 /* HVBloodPressure.h */; };
+		9C7283241C076E710011CF4B /* HVCCD.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D591D181547136D00EAC934 /* HVCCD.h */; };
+		9C7283251C076E710011CF4B /* HVCCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D591D2015471A2700EAC934 /* HVCCR.h */; };
+		9C7283261C076E710011CF4B /* HVCholesterol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8E5A9C152FA913002BC6E2 /* HVCholesterol.h */; };
+		9C7283271C076E710011CF4B /* HVCholesterolV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDB6D5416540B4E001BCB16 /* HVCholesterolV2.h */; };
+		9C7283281C076E710011CF4B /* HVCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0B4BDF151A7D50000849D0 /* HVCondition.h */; };
+		9C7283291C076E710011CF4B /* HVDailyDietaryIntake.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D88C5D9161F4E5700F74D54 /* HVDailyDietaryIntake.h */; };
+		9C72832A1C076E710011CF4B /* HVDailyMedicationUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C7D1538D2F6000F01AE /* HVDailyMedicationUsage.h */; };
+		9C72832B1C076E710011CF4B /* HVDietaryIntake.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1F13361539FF6200524425 /* HVDietaryIntake.h */; };
+		9C72832C1C076E710011CF4B /* HVEmergencyOrProviderContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D561B0315365F74003D68D2 /* HVEmergencyOrProviderContact.h */; };
+		9C72832D1C076E710011CF4B /* HVEmotionalState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C811538D869000F01AE /* HVEmotionalState.h */; };
+		9C72832E1C076E710011CF4B /* HVEncounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE34C8415393B87003C24E8 /* HVEncounter.h */; };
+		9C72832F1C076E710011CF4B /* HVExercise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC7997E1534FCCF00193A3B /* HVExercise.h */; };
+		9C7283301C076E710011CF4B /* HVFamilyHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1F132B1539EDF100524425 /* HVFamilyHistory.h */; };
+		9C7283311C076E710011CF4B /* HVFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D591CFF15465F5900EAC934 /* HVFile.h */; };
+		9C7283321C076E710011CF4B /* HVHeartRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0645B2184545D500D306CC /* HVHeartRate.h */; };
+		9C7283331C076E710011CF4B /* HVHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC7997A1534F3A200193A3B /* HVHeight.h */; };
+		9C7283341C076E710011CF4B /* HVImmunization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8E5AAF152FC45F002BC6E2 /* HVImmunization.h */; };
+		9C7283351C076E710011CF4B /* HVInsurance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC726081561E06C00734BC4 /* HVInsurance.h */; };
+		9C7283361C076E710011CF4B /* HVItemRaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D33D14F4467C00160611 /* HVItemRaw.h */; };
+		9C7283371C076E710011CF4B /* HVItemTestExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C22150019650078D85F /* HVItemTestExtensions.h */; };
+		9C7283381C076E710011CF4B /* HVItemTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BDE14E5F7A300C287B7 /* HVItemTypes.h */; };
+		9C7283391C076E710011CF4B /* HVLabTestResults.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BE719009587009ABAAB /* HVLabTestResults.h */; };
+		9C72833A1C076E710011CF4B /* HVMedication.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D05151BCAB400E109AD /* HVMedication.h */; };
+		9C72833B1C076E710011CF4B /* HVMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D25D67618AC574300B29B6D /* HVMessage.h */; };
+		9C72833C1C076E710011CF4B /* HVPeakFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8183FF1875FF060073F8E6 /* HVPeakFlow.h */; };
+		9C72833D1C076E710011CF4B /* HVPersonalContactInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C791538D04D000F01AE /* HVPersonalContactInfo.h */; };
+		9C72833E1C076E710011CF4B /* HVPersonalDemographics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C751538C2B7000F01AE /* HVPersonalDemographics.h */; };
+		9C72833F1C076E710011CF4B /* HVPersonalImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D591D261547242D00EAC934 /* HVPersonalImage.h */; };
+		9C7283401C076E710011CF4B /* HVProcedure.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D07A9551534B1780013DC2A /* HVProcedure.h */; };
+		9C7283411C076E710011CF4B /* HVQuestionAnswer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE34C7A153925F2003C24E8 /* HVQuestionAnswer.h */; };
+		9C7283421C076E710011CF4B /* HVSleepJournalAM.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE34C96153957AA003C24E8 /* HVSleepJournalAM.h */; };
+		9C7283431C076E710011CF4B /* HVSleepJournalPM.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1F13221539DD5200524425 /* HVSleepJournalPM.h */; };
+		9C7283441C076E710011CF4B /* HVVitalSigns.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C891538E42E000F01AE /* HVVitalSigns.h */; };
+		9C7283451C076E710011CF4B /* HVWeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BDA14E5F50600C287B7 /* HVWeight.h */; };
+		9C7283461C076E710011CF4B /* HVMethodFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAED4AB18E4BC960048ECBD /* HVMethodFactory.h */; };
+		9C7283471C076E710011CF4B /* HVMethodCallTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D39F9251513A63500208A7B /* HVMethodCallTask.h */; };
+		9C7283481C076E710011CF4B /* HVGetItemsTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D39F92D1513E41200208A7B /* HVGetItemsTask.h */; };
+		9C7283491C076E710011CF4B /* HVPutItemsTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D4C1522527100E109AD /* HVPutItemsTask.h */; };
+		9C72834A1C076E710011CF4B /* HVRemoveItemsTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D641522780600E109AD /* HVRemoveItemsTask.h */; };
+		9C72834B1C076E710011CF4B /* HVVocabSearchTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D801522973300E109AD /* HVVocabSearchTask.h */; };
+		9C72834C1C076E710011CF4B /* HVGetAuthorizedPeopleTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC799901535FEE300193A3B /* HVGetAuthorizedPeopleTask.h */; };
+		9C72834D1C076E710011CF4B /* HVGetVocabTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D925DD515376F21006BAAA8 /* HVGetVocabTask.h */; };
+		9C72834E1C076E710011CF4B /* HVGetPersonalImageTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D591D2A1547330100EAC934 /* HVGetPersonalImageTask.h */; };
+		9C72834F1C076E710011CF4B /* HVVocabSearcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9E83711553000000072A0C /* HVVocabSearcher.h */; };
+		9C7283501C076E710011CF4B /* HVBeginBlobPutTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1BE477156B464400718832 /* HVBeginBlobPutTask.h */; };
+		9C7283511C076E710011CF4B /* HVBlobUploadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1BE47B156B483800718832 /* HVBlobUploadTask.h */; };
+		9C7283521C076E710011CF4B /* HVItemBlobUploadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB4206B156C959200E1A473 /* HVItemBlobUploadTask.h */; };
+		9C7283531C076E710011CF4B /* HVRemoveRecordAuthTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D091278166EB7A60031F5F9 /* HVRemoveRecordAuthTask.h */; };
+		9C7283541C076E710011CF4B /* HVGetServiceDefinitionTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D78990417160DFF0015D375 /* HVGetServiceDefinitionTask.h */; };
+		9C7283551C076E710011CF4B /* HVDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3124150EAD8400ED11E7 /* HVDirectory.h */; };
+		9C7283561C076E710011CF4B /* HVDirectoryNameEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E71218D3BD950030972D /* HVDirectoryNameEnumerator.h */; };
+		9C7283571C076E710011CF4B /* HVTypeViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C2B15003C2A0078D85F /* HVTypeViewItem.h */; };
+		9C7283581C076E710011CF4B /* HVTypeViewItems.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C2F15003C3D0078D85F /* HVTypeViewItems.h */; };
+		9C7283591C076E710011CF4B /* HVSyncView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BED19059AA9009ABAAB /* HVSyncView.h */; };
+		9C72835A1C076E710011CF4B /* HVTypeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C4215015EE60078D85F /* HVTypeView.h */; };
+		9C72835B1C076E710011CF4B /* HVItemStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C3815004E040078D85F /* HVItemStore.h */; };
+		9C72835C1C076E710011CF4B /* HVMemoryStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C3E150051DC0078D85F /* HVMemoryStore.h */; };
+		9C72835D1C076E710011CF4B /* HVSynchronizedStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C46150160CD0078D85F /* HVSynchronizedStore.h */; };
+		9C72835E1C076E710011CF4B /* HVLocalVault.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C5E1508049E0078D85F /* HVLocalVault.h */; };
+		9C72835F1C076E710011CF4B /* HVLocalItemStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D39F935151A3AA000208A7B /* HVLocalItemStore.h */; };
+		9C7283601C076E710011CF4B /* HVLocalRecordStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D39F939151A718900208A7B /* HVLocalRecordStore.h */; };
+		9C7283611C076E710011CF4B /* HVLocalVocabStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD2161F1556E18A001C8F31 /* HVLocalVocabStore.h */; };
+		9C7283621C076E710011CF4B /* HVCachingObjectStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D338B5F15680893005A6C55 /* HVCachingObjectStore.h */; };
+		9C7283631C076E710011CF4B /* HVStoredQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D74847C157A7C5E001A7713 /* HVStoredQuery.h */; };
+		9C7283641C076E710011CF4B /* HVDownloadItemsTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7D05C31639E83800D32AD5 /* HVDownloadItemsTask.h */; };
+		9C7283651C076E710011CF4B /* HVPartitionedStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E71E18D3CBCF0030972D /* HVPartitionedStore.h */; };
+		9C7283661C076E710011CF4B /* HVLockTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E61218D22EA90030972D /* HVLockTable.h */; };
+		9C7283671C076E710011CF4B /* HVWorkerStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E73218D7905F0030972D /* HVWorkerStatus.h */; };
+		9C7283681C076E710011CF4B /* HVItemChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E69218D2553B0030972D /* HVItemChange.h */; };
+		9C7283691C076E710011CF4B /* HVItemChangeTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E69618D271F30030972D /* HVItemChangeTable.h */; };
+		9C72836A1C076E710011CF4B /* HVItemChangeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E6F918D38E300030972D /* HVItemChangeManager.h */; };
+		9C72836B1C076E710011CF4B /* HVItemCommitErrorHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E72218D4BF910030972D /* HVItemCommitErrorHandler.h */; };
+		9C72836C1C076E710011CF4B /* HVItemCommitScheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BAD18F85265009ABAAB /* HVItemCommitScheduler.h */; };
+		9C72836D1C076E710011CF4B /* HVSynchronizedType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E73618D8B6F00030972D /* HVSynchronizedType.h */; };
+		9C72836E1C076E710011CF4B /* HVSynchronizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E74B18DA3F870030972D /* HVSynchronizationManager.h */; };
+		9C72836F1C076E710011CF4B /* HVTypeViewRefresher.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BB918FC5719009ABAAB /* HVTypeViewRefresher.h */; };
+		9C7283701C076E710011CF4B /* HVBatchItemDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BBD18FC80A5009ABAAB /* HVBatchItemDownloader.h */; };
+		9C7283711C076E710011CF4B /* HVBaseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BF814E60D1D00C287B7 /* HVBaseTypes.h */; };
+		9C7283721C076E710011CF4B /* HVBool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2F814EEFF6B00160611 /* HVBool.h */; };
+		9C7283731C076E710011CF4B /* HVConstrainedDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2D814EDD32500160611 /* HVConstrainedDouble.h */; };
+		9C7283741C076E710011CF4B /* HVConstrainedInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BE414E6006400C287B7 /* HVConstrainedInt.h */; };
+		9C7283751C076E710011CF4B /* HVConstrainedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D33114F4365E00160611 /* HVConstrainedString.h */; };
+		9C7283761C076E710011CF4B /* HVConstrainedXmlDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE74304174D31BC005F2D09 /* HVConstrainedXmlDate.h */; };
+		9C7283771C076E710011CF4B /* HVDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BE814E6035900C287B7 /* HVDay.h */; };
+		9C7283781C076E710011CF4B /* HVDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2F014EEF99300160611 /* HVDouble.h */; };
+		9C7283791C076E710011CF4B /* HVEmailAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D19151BF2E100E109AD /* HVEmailAddress.h */; };
+		9C72837A1C076E710011CF4B /* HVGuid.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BB614E5949B00C287B7 /* HVGuid.h */; };
+		9C72837B1C076E710011CF4B /* HVHour.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BFA14E984B500C287B7 /* HVHour.h */; };
+		9C72837C1C076E710011CF4B /* HVInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2EC14EEF84300160611 /* HVInt.h */; };
+		9C72837D1C076E710011CF4B /* HVMillisecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983C0614E9850300C287B7 /* HVMillisecond.h */; };
+		9C72837E1C076E710011CF4B /* HVMinute.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BFE14E984CC00C287B7 /* HVMinute.h */; };
+		9C72837F1C076E710011CF4B /* HVMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BEC14E6038000C287B7 /* HVMonth.h */; };
+		9C7283801C076E710011CF4B /* HVNonNegativeDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF9107F158D09930027E0A8 /* HVNonNegativeDouble.h */; };
+		9C7283811C076E710011CF4B /* HVNonNegativeInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2F414EEFA7500160611 /* HVNonNegativeInt.h */; };
+		9C7283821C076E710011CF4B /* HVOneToFive.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC799621534C97200193A3B /* HVOneToFive.h */; };
+		9C7283831C076E710011CF4B /* HVPositiveDouble.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2DC14EDD5FE00160611 /* HVPositiveDouble.h */; };
+		9C7283841C076E710011CF4B /* HVPositiveInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D57A8B4152F8A0C00A80C4A /* HVPositiveInt.h */; };
+		9C7283851C076E710011CF4B /* HVSecond.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983C0214E984ED00C287B7 /* HVSecond.h */; };
+		9C7283861C076E710011CF4B /* HVString1024.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6EDDAE15463DB700420262 /* HVString1024.h */; };
+		9C7283871C076E710011CF4B /* HVString255.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D33514F43A1000160611 /* HVString255.h */; };
+		9C7283881C076E710011CF4B /* HVStringZ512.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D33914F43A9800160611 /* HVStringZ512.h */; };
+		9C7283891C076E710011CF4B /* HVVocabSearchText.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D7015228C0200E109AD /* HVVocabSearchText.h */; };
+		9C72838A1C076E710011CF4B /* HVYear.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BF014E6039C00C287B7 /* HVYear.h */; };
+		9C72838B1C076E710011CF4B /* HVBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF44782156BC54000532EAA /* HVBlob.h */; };
+		9C72838C1C076E710011CF4B /* HVBlobInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6EDDA61546306200420262 /* HVBlobInfo.h */; };
+		9C72838D1C076E710011CF4B /* HVBlobPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D591CFA15464FD800EAC934 /* HVBlobPayload.h */; };
+		9C72838E1C076E710011CF4B /* HVBlobPayloadItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D6EDDAA154631B700420262 /* HVBlobPayloadItem.h */; };
+		9C72838F1C076E710011CF4B /* HVBlobHashInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1B7BED154642F600854881 /* HVBlobHashInfo.h */; };
+		9C7283901C076E710011CF4B /* HVBlobPutParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1BE473156B427F00718832 /* HVBlobPutParameters.h */; };
+		9C7283911C076E710011CF4B /* HVBlobSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC8D503156D9FFF00CA119A /* HVBlobSource.h */; };
+		9C7283921C076E710011CF4B /* HVAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D0D151BEB9F00E109AD /* HVAddress.h */; };
+		9C7283931C076E710011CF4B /* HVApproxDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8E5AB3152FC551002BC6E2 /* HVApproxDate.h */; };
+		9C7283941C076E710011CF4B /* HVApproxDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0B4BE4151A80A4000849D0 /* HVApproxDateTime.h */; };
+		9C7283951C076E710011CF4B /* HVApproxMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D01151BC72B00E109AD /* HVApproxMeasurement.h */; };
+		9C7283961C076E710011CF4B /* HVAssessmentField.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C8D1538E9B8000F01AE /* HVAssessmentField.h */; };
+		9C7283971C076E710011CF4B /* HVAudit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D34114F44EE800160611 /* HVAudit.h */; };
+		9C7283981C076E710011CF4B /* HVBloodGlucoseMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC7996A1534CB0E00193A3B /* HVBloodGlucoseMeasurement.h */; };
+		9C7283991C076E710011CF4B /* HVCodableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF157114EC2455009D05D5 /* HVCodableValue.h */; };
+		9C72839A1C076E710011CF4B /* HVCodedValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF156D14EC242E009D05D5 /* HVCodedValue.h */; };
+		9C72839B1C076E710011CF4B /* HVConcentrationValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDB6D4F1653FE59001BCB16 /* HVConcentrationValue.h */; };
+		9C72839C1C076E710011CF4B /* HVConditionEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1F132F1539EF0600524425 /* HVConditionEntry.h */; };
+		9C72839D1C076E710011CF4B /* HVContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D21151BF60D00E109AD /* HVContact.h */; };
+		9C72839E1C076E710011CF4B /* HVDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BF414E6070500C287B7 /* HVDate.h */; };
+		9C72839F1C076E710011CF4B /* HVDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF156914EB180D009D05D5 /* HVDateTime.h */; };
+		9C7283A01C076E710011CF4B /* HVDisplayValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2E414EDDEF400160611 /* HVDisplayValue.h */; };
+		9C7283A11C076E710011CF4B /* HVDuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE34C8815393C61003C24E8 /* HVDuration.h */; };
+		9C7283A21C076E710011CF4B /* HVEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D1D151BF53F00E109AD /* HVEmail.h */; };
+		9C7283A31C076E710011CF4B /* HVFlowValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D18A49F187361AB000AE3BD /* HVFlowValue.h */; };
+		9C7283A41C076E710011CF4B /* HVFoodEnergyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D88C5DE161F4EDF00F74D54 /* HVFoodEnergyValue.h */; };
+		9C7283A51C076E710011CF4B /* HVGetAuthorizedPeopleResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC3C43515360123008BBDBF /* HVGetAuthorizedPeopleResult.h */; };
+		9C7283A61C076E710011CF4B /* HVItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D31114F2F4EF00160611 /* HVItem.h */; };
+		9C7283A71C076E710011CF4B /* HVItemData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D32914F42E0C00160611 /* HVItemData.h */; };
+		9C7283A81C076E710011CF4B /* HVItemDataCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D32D14F4352200160611 /* HVItemDataCommon.h */; };
+		9C7283A91C076E710011CF4B /* HVItemDataTyped.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BD614E5F4BD00C287B7 /* HVItemDataTyped.h */; };
+		9C7283AA1C076E710011CF4B /* HVItemFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D30914F2E22800160611 /* HVItemFilter.h */; };
+		9C7283AB1C076E710011CF4B /* HVItemKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D30514F2E21000160611 /* HVItemKey.h */; };
+		9C7283AC1C076E710011CF4B /* HVItemQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2FC14EF3DC000160611 /* HVItemQuery.h */; };
+		9C7283AD1C076E710011CF4B /* HVItemQueryResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D35514F4882C00160611 /* HVItemQueryResult.h */; };
+		9C7283AE1C076E710011CF4B /* HVItemQueryResults.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D34D14F487B500160611 /* HVItemQueryResults.h */; };
+		9C7283AF1C076E710011CF4B /* HVItemSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D31914F2FA5400160611 /* HVItemSection.h */; };
+		9C7283B01C076E710011CF4B /* HVItemState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D32114F304E100160611 /* HVItemState.h */; };
+		9C7283B11C076E710011CF4B /* HVItemType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D32514F424EA00160611 /* HVItemType.h */; };
+		9C7283B21C076E710011CF4B /* HVItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D30D14F2E26400160611 /* HVItemView.h */; };
+		9C7283B31C076E710011CF4B /* HVLengthMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC799761534EC2D00193A3B /* HVLengthMeasurement.h */; };
+		9C7283B41C076E710011CF4B /* HVMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195CFD151BBC7C00E109AD /* HVMeasurement.h */; };
+		9C7283B51C076E710011CF4B /* HVMessageAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D25D66E18AC567800B29B6D /* HVMessageAttachment.h */; };
+		9C7283B61C076E710011CF4B /* HVMessageHeaderItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D25D67018AC567800B29B6D /* HVMessageHeaderItem.h */; };
+		9C7283B71C076E710011CF4B /* HVName.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D29151BFA4F00E109AD /* HVName.h */; };
+		9C7283B81C076E710011CF4B /* HVNameValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC799721534E3ED00193A3B /* HVNameValue.h */; };
+		9C7283B91C076E710011CF4B /* HVNutritionFact.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D88C5E2161F4F1700F74D54 /* HVNutritionFact.h */; };
+		9C7283BA1C076E710011CF4B /* HVOccurence.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE34C92153951FC003C24E8 /* HVOccurence.h */; };
+		9C7283BB1C076E710011CF4B /* HVOrganization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE34C8C15394313003C24E8 /* HVOrganization.h */; };
+		9C7283BC1C076E710011CF4B /* HVPendingItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D35114F487E100160611 /* HVPendingItem.h */; };
+		9C7283BD1C076E710011CF4B /* HVPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D25151BF9F100E109AD /* HVPerson.h */; };
+		9C7283BE1C076E710011CF4B /* HVPersonInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D34914F4807900160611 /* HVPersonInfo.h */; };
+		9C7283BF1C076E710011CF4B /* HVPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195D11151BF01600E109AD /* HVPhone.h */; };
+		9C7283C01C076E710011CF4B /* HVPrescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D362B53152F84E2006CC30C /* HVPrescription.h */; };
+		9C7283C11C076E710011CF4B /* HVRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D34514F4804600160611 /* HVRecord.h */; };
+		9C7283C21C076E710011CF4B /* HVRelatedItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D195CF8151B886000E109AD /* HVRelatedItem.h */; };
+		9C7283C31C076E710011CF4B /* HVRelative.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1F13271539E9DF00524425 /* HVRelative.h */; };
+		9C7283C41C076E710011CF4B /* HVTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF154D14E98DCA009D05D5 /* HVTime.h */; };
+		9C7283C51C076E710011CF4B /* HVType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF154814E985C5009D05D5 /* HVType.h */; };
+		9C7283C61C076E710011CF4B /* HVTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BD414E5E87000C287B7 /* HVTypes.h */; };
+		9C7283C71C076E710011CF4B /* HVVitalSignResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D775C851538DED0000F01AE /* HVVitalSignResult.h */; };
+		9C7283C81C076E710011CF4B /* HVVolumeValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8183FB1875F9480073F8E6 /* HVVolumeValue.h */; };
+		9C7283C91C076E710011CF4B /* HVWeightMeasurement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D20D2E014EDD6C000160611 /* HVWeightMeasurement.h */; };
+		9C7283CA1C076E710011CF4B /* HVTestResultRangeValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BD719005D5D009ABAAB /* HVTestResultRangeValue.h */; };
+		9C7283CB1C076E710011CF4B /* HVTestResultRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BDB19005FF0009ABAAB /* HVTestResultRange.h */; };
+		9C7283CC1C076E710011CF4B /* HVLabTestResultValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BDF19006203009ABAAB /* HVLabTestResultValue.h */; };
+		9C7283CD1C076E710011CF4B /* HVLabTestResultsDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BD319005CA5009ABAAB /* HVLabTestResultsDetails.h */; };
+		9C7283CE1C076E710011CF4B /* HVLabTestResultsGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BE319008C62009ABAAB /* HVLabTestResultsGroup.h */; };
+		9C7283CF1C076E710011CF4B /* HVServerError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1ACC8719104559000689FD /* HVServerError.h */; };
+		9C7283D01C076E710011CF4B /* HVResponseStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1ACC7F19104056000689FD /* HVResponseStatus.h */; };
+		9C7283D11C076E710011CF4B /* HVResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1ACC7B19103C73000689FD /* HVResponse.h */; };
+		9C7283D21C076E710011CF4B /* HVServiceDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7898CF1714E9FE0015D375 /* HVServiceDef.h */; };
+		9C7283D31C076E710011CF4B /* HVConfigurationEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7898DD1714EEAA0015D375 /* HVConfigurationEntry.h */; };
+		9C7283D41C076E710011CF4B /* HVPlatformInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7898CB1714E9930015D375 /* HVPlatformInfo.h */; };
+		9C7283D51C076E710011CF4B /* HVShellInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7898F71715DD3A0015D375 /* HVShellInfo.h */; };
+		9C7283D61C076E710011CF4B /* HVServiceDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7899001715E37E0015D375 /* HVServiceDefinition.h */; };
+		9C7283D71C076E710011CF4B /* HVInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D78992B171727390015D375 /* HVInstance.h */; };
+		9C7283D81C076E710011CF4B /* HVSystemInstances.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D78993017172B960015D375 /* HVSystemInstances.h */; };
+		9C7283D91C076E710011CF4B /* HVVocab.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D925DDA15376F8A006BAAA8 /* HVVocab.h */; };
+		9C7283DA1C076E710011CF4B /* HVVocabIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D227B85153766E500E12075 /* HVVocabIdentifier.h */; };
+		9C7283DB1C076E710011CF4B /* HVVocabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D227B87153766E500E12075 /* HVVocabItem.h */; };
+		9C7283DC1C076E710011CF4B /* HVVocabCodeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D227B8B153766E500E12075 /* HVVocabCodeSet.h */; };
+		9C7283DD1C076E710011CF4B /* HVVocabSearchParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D227B89153766E500E12075 /* HVVocabSearchParams.h */; };
+		9C7283DE1C076E710011CF4B /* HVVocabParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D925DDE15377348006BAAA8 /* HVVocabParams.h */; };
+		9C7283DF1C076E710011CF4B /* HVLibUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BB518F86CD6009ABAAB /* HVLibUI.h */; };
+		9C7283E01C076E710011CF4B /* HVTypeViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D119D9E18F46771005117E0 /* HVTypeViewDataSource.h */; };
+		9C7283E11C076E710011CF4B /* HVSynchronizedTypeDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D119E2E18F49098005117E0 /* HVSynchronizedTypeDataSource.h */; };
+		9C7283E21C076E710011CF4B /* HVUITaskAwareViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF90BB118F86663009ABAAB /* HVUITaskAwareViewController.h */; };
+		9C7283E31C076E710011CF4B /* XConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE3830214E4447800DFA11D /* XConverter.h */; };
+		9C7283E41C076E710011CF4B /* XException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE3830414E4447800DFA11D /* XException.h */; };
+		9C7283E51C076E710011CF4B /* XLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE3830614E4447800DFA11D /* XLib.h */; };
+		9C7283E61C076E710011CF4B /* XNodeType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE3830714E4447800DFA11D /* XNodeType.h */; };
+		9C7283E71C076E710011CF4B /* XReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE3830814E4447800DFA11D /* XReader.h */; };
+		9C7283E81C076E710011CF4B /* XString.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE3830A14E4447800DFA11D /* XString.h */; };
+		9C7283E91C076E710011CF4B /* XWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2D1C5B14E4A4F400C85B7E /* XWriter.h */; };
+		9C7283EA1C076E710011CF4B /* XSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BCF14E5BF6700C287B7 /* XSerializer.h */; };
+		9C7283EB1C076E710011CF4B /* XSerializableType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD0B80814F81DDE00AAD54F /* XSerializableType.h */; };
+		9C7283EC1C076E710011CF4B /* HVArrayExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE382F914E338C900DFA11D /* HVArrayExtensions.h */; };
+		9C7283ED1C076E710011CF4B /* HVAsyncTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C4E15017CC10078D85F /* HVAsyncTask.h */; };
+		9C7283EE1C076E710011CF4B /* HVBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F318B150FDD4700ED11E7 /* HVBlock.h */; };
+		9C7283EF1C076E710011CF4B /* HVClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC50C5A1506F5FF0078D85F /* HVClient.h */; };
+		9C7283F01C076E710011CF4B /* HVClientException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D983BE014E5FE2A00C287B7 /* HVClientException.h */; };
+		9C7283F11C076E710011CF4B /* HVClientResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF156514EB0985009D05D5 /* HVClientResult.h */; };
+		9C7283F21C076E710011CF4B /* HVClientSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D5F3119150E9A3C00ED11E7 /* HVClientSettings.h */; };
+		9C7283F31C076E710011CF4B /* HVCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8FC3E014E2EDDF000F28EB /* HVCommon.h */; };
+		9C7283F41C076E710011CF4B /* HVCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0DACB114E2FE14002CBE52 /* HVCore.h */; };
+		9C7283F51C076E710011CF4B /* HVDataExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1139B915461F740008C362 /* HVDataExtensions.h */; };
+		9C7283F61C076E710011CF4B /* HVDateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF155514E9987E009D05D5 /* HVDateExtensions.h */; };
+		9C7283F71C076E710011CF4B /* HVDictionaryExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4A931F1635BC48007390B7 /* HVDictionaryExtensions.h */; };
+		9C7283F81C076E710011CF4B /* HVExceptionExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D76B9D714DCC85B00BA865F /* HVExceptionExtensions.h */; };
+		9C7283F91C076E710011CF4B /* HVKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1D460B1596301A00383979 /* HVKeyChain.h */; };
+		9C7283FA1C076E710011CF4B /* HVLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D76B9E814DCC9CF00BA865F /* HVLib.h */; };
+		9C7283FB1C076E710011CF4B /* HVObjectStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D97B93F15125A270004B551 /* HVObjectStore.h */; };
+		9C7283FC1C076E710011CF4B /* HVRandom.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC44B7A14FEA3E600E2E02F /* HVRandom.h */; };
+		9C7283FD1C076E710011CF4B /* HVRecordReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D39F9201513A07700208A7B /* HVRecordReference.h */; };
+		9C7283FE1C076E710011CF4B /* HVServerResponseStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D39F9291513AA5F00208A7B /* HVServerResponseStatus.h */; };
+		9C7283FF1C076E710011CF4B /* HVStringExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D76B9D514DCC85B00BA865F /* HVStringExtensions.h */; };
+		9C7284001C076E710011CF4B /* HVUIAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE57A191510F75300829CC2 /* HVUIAlert.h */; };
+		9C7284011C076E710011CF4B /* HVUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D97B93A1511743C0004B551 /* HVUser.h */; };
+		9C7284021C076E710011CF4B /* HVValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D76B9D114DCC84C00BA865F /* HVValidator.h */; };
+		9C7284031C076E8E0011CF4B /* HVMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC799941535FF4100193A3B /* HVMethods.h */; };
+		9C7284041C076E970011CF4B /* HVStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB2E6F518D38CF90030972D /* HVStore.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -761,7 +1265,6 @@
 		5D6EDDAF15463DB700420262 /* HVString1024.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVString1024.m; sourceTree = "<group>"; };
 		5D74847C157A7C5E001A7713 /* HVStoredQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVStoredQuery.h; sourceTree = "<group>"; };
 		5D74847D157A7C5E001A7713 /* HVStoredQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVStoredQuery.m; sourceTree = "<group>"; };
-		5D76B9C814DCB92400BA865F /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		5D76B9D114DCC84C00BA865F /* HVValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVValidator.h; sourceTree = "<group>"; };
 		5D76B9D214DCC84C00BA865F /* HVValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVValidator.m; sourceTree = "<group>"; };
 		5D76B9D514DCC85B00BA865F /* HVStringExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVStringExtensions.h; sourceTree = "<group>"; };
@@ -1022,6 +1525,9 @@
 		5DF90BED19059AA9009ABAAB /* HVSyncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVSyncView.h; sourceTree = "<group>"; };
 		5DF9107F158D09930027E0A8 /* HVNonNegativeDouble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVNonNegativeDouble.h; sourceTree = "<group>"; };
 		5DF91080158D09930027E0A8 /* HVNonNegativeDouble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVNonNegativeDouble.m; sourceTree = "<group>"; };
+		9C7280D81C0753870011CF4B /* HVKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HVKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C7280DA1C0753870011CF4B /* HVKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVKit.h; sourceTree = "<group>"; };
+		9C7280DC1C0753870011CF4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1030,10 +1536,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DB083D618F3176100702B79 /* SystemConfiguration.framework in Frameworks */,
-				5D5F3112150E95E700ED11E7 /* UIKit.framework in Frameworks */,
-				5D76B9C914DCB92400BA865F /* libxml2.2.dylib in Frameworks */,
 				5D5299B014DCB3A700D2636E /* Foundation.framework in Frameworks */,
+				5D5F3112150E95E700ED11E7 /* UIKit.framework in Frameworks */,
 				5D1D461E1597982700383979 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C7280D41C0753870011CF4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7280E31C0753C60011CF4B /* SystemConfiguration.framework in Frameworks */,
+				9C7280E21C0753BD0011CF4B /* Foundation.framework in Frameworks */,
+				9C7280E11C0753B50011CF4B /* UIKit.framework in Frameworks */,
+				9C7280E01C0753AE0011CF4B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1101,9 +1617,9 @@
 		5D5299A114DCB3A700D2636E = {
 			isa = PBXGroup;
 			children = (
-				5D76B9C814DCB92400BA865F /* libxml2.2.dylib */,
 				5D5299B114DCB3A700D2636E /* HVLib */,
 				5D5299B214DCB3A700D2636E /* Supporting Files */,
+				9C7280D91C0753870011CF4B /* HVKit */,
 				5D5299AE14DCB3A700D2636E /* Frameworks */,
 				5D5299AD14DCB3A700D2636E /* Products */,
 			);
@@ -1113,6 +1629,7 @@
 			isa = PBXGroup;
 			children = (
 				5D5299AC14DCB3A700D2636E /* libHVLib.a */,
+				9C7280D81C0753870011CF4B /* HVKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1740,6 +2257,15 @@
 			path = Xml;
 			sourceTree = "<group>";
 		};
+		9C7280D91C0753870011CF4B /* HVKit */ = {
+			isa = PBXGroup;
+			children = (
+				9C7280DA1C0753870011CF4B /* HVKit.h */,
+				9C7280DC1C0753870011CF4B /* Info.plist */,
+			);
+			path = HVKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -2005,6 +2531,271 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C7280D51C0753870011CF4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7283F71C076E710011CF4B /* HVDictionaryExtensions.h in Headers */,
+				9C72835F1C076E710011CF4B /* HVLocalItemStore.h in Headers */,
+				9C7283F41C076E710011CF4B /* HVCore.h in Headers */,
+				9C72836A1C076E710011CF4B /* HVItemChangeManager.h in Headers */,
+				9C7283491C076E710011CF4B /* HVPutItemsTask.h in Headers */,
+				9C72838F1C076E710011CF4B /* HVBlobHashInfo.h in Headers */,
+				9C72835E1C076E710011CF4B /* HVLocalVault.h in Headers */,
+				9C7283D71C076E710011CF4B /* HVInstance.h in Headers */,
+				9C7283A21C076E710011CF4B /* HVEmail.h in Headers */,
+				9C72839F1C076E710011CF4B /* HVDateTime.h in Headers */,
+				9C7283D41C076E710011CF4B /* HVPlatformInfo.h in Headers */,
+				9C7283601C076E710011CF4B /* HVLocalRecordStore.h in Headers */,
+				9C7283391C076E710011CF4B /* HVLabTestResults.h in Headers */,
+				9C72834A1C076E710011CF4B /* HVRemoveItemsTask.h in Headers */,
+				9C7283B51C076E710011CF4B /* HVMessageAttachment.h in Headers */,
+				9C7283EA1C076E710011CF4B /* XSerializer.h in Headers */,
+				9C72838C1C076E710011CF4B /* HVBlobInfo.h in Headers */,
+				9C72830B1C076E710011CF4B /* HVNetworkReachability.h in Headers */,
+				9C72831C1C076E710011CF4B /* WebTransport.h in Headers */,
+				9C7283641C076E710011CF4B /* HVDownloadItemsTask.h in Headers */,
+				9C7283041C076E710011CF4B /* HVCollection.h in Headers */,
+				9C7283091C076E710011CF4B /* HVHttpRequestResponse.h in Headers */,
+				9C7283171C076E710011CF4B /* Base64.h in Headers */,
+				9C7283C81C076E710011CF4B /* HVVolumeValue.h in Headers */,
+				9C72833D1C076E710011CF4B /* HVPersonalContactInfo.h in Headers */,
+				9C72837D1C076E710011CF4B /* HVMillisecond.h in Headers */,
+				9C7283FF1C076E710011CF4B /* HVStringExtensions.h in Headers */,
+				9C7283AF1C076E710011CF4B /* HVItemSection.h in Headers */,
+				9C7283C31C076E710011CF4B /* HVRelative.h in Headers */,
+				9C72830F1C076E710011CF4B /* HealthVaultResponse.h in Headers */,
+				9C7283701C076E710011CF4B /* HVBatchItemDownloader.h in Headers */,
+				9C7284001C076E710011CF4B /* HVUIAlert.h in Headers */,
+				9C72834E1C076E710011CF4B /* HVGetPersonalImageTask.h in Headers */,
+				9C7283711C076E710011CF4B /* HVBaseTypes.h in Headers */,
+				9C7283441C076E710011CF4B /* HVVitalSigns.h in Headers */,
+				9C7283291C076E710011CF4B /* HVDailyDietaryIntake.h in Headers */,
+				9C7283B21C076E710011CF4B /* HVItemView.h in Headers */,
+				9C7283221C076E710011CF4B /* HVBloodGlucose.h in Headers */,
+				9C7283811C076E710011CF4B /* HVNonNegativeInt.h in Headers */,
+				9C7283E01C076E710011CF4B /* HVTypeViewDataSource.h in Headers */,
+				9C7283EC1C076E710011CF4B /* HVArrayExtensions.h in Headers */,
+				9C72837A1C076E710011CF4B /* HVGuid.h in Headers */,
+				9C7283431C076E710011CF4B /* HVSleepJournalPM.h in Headers */,
+				9C7283651C076E710011CF4B /* HVPartitionedStore.h in Headers */,
+				9C72832F1C076E710011CF4B /* HVExercise.h in Headers */,
+				9C72837B1C076E710011CF4B /* HVHour.h in Headers */,
+				9C7283531C076E710011CF4B /* HVRemoveRecordAuthTask.h in Headers */,
+				9C7283061C076E710011CF4B /* HVBrowserController.h in Headers */,
+				9C72832C1C076E710011CF4B /* HVEmergencyOrProviderContact.h in Headers */,
+				9C72832A1C076E710011CF4B /* HVDailyMedicationUsage.h in Headers */,
+				9C7283951C076E710011CF4B /* HVApproxMeasurement.h in Headers */,
+				9C7283631C076E710011CF4B /* HVStoredQuery.h in Headers */,
+				9C72833F1C076E710011CF4B /* HVPersonalImage.h in Headers */,
+				9C7283731C076E710011CF4B /* HVConstrainedDouble.h in Headers */,
+				9C7283541C076E710011CF4B /* HVGetServiceDefinitionTask.h in Headers */,
+				9C7283FB1C076E710011CF4B /* HVObjectStore.h in Headers */,
+				9C7283AB1C076E710011CF4B /* HVItemKey.h in Headers */,
+				9C72834F1C076E710011CF4B /* HVVocabSearcher.h in Headers */,
+				9C72833E1C076E710011CF4B /* HVPersonalDemographics.h in Headers */,
+				9C7283FC1C076E710011CF4B /* HVRandom.h in Headers */,
+				9C7283851C076E710011CF4B /* HVSecond.h in Headers */,
+				9C7283281C076E710011CF4B /* HVCondition.h in Headers */,
+				9C7283471C076E710011CF4B /* HVMethodCallTask.h in Headers */,
+				9C7283891C076E710011CF4B /* HVVocabSearchText.h in Headers */,
+				9C7283271C076E710011CF4B /* HVCholesterolV2.h in Headers */,
+				9C7283B31C076E710011CF4B /* HVLengthMeasurement.h in Headers */,
+				9C7283231C076E710011CF4B /* HVBloodPressure.h in Headers */,
+				9C7283B91C076E710011CF4B /* HVNutritionFact.h in Headers */,
+				9C7283661C076E710011CF4B /* HVLockTable.h in Headers */,
+				9C7283081C076E710011CF4B /* HVHttp.h in Headers */,
+				9C72835D1C076E710011CF4B /* HVSynchronizedStore.h in Headers */,
+				9C72835C1C076E710011CF4B /* HVMemoryStore.h in Headers */,
+				9C7283201C076E710011CF4B /* HVAssessment.h in Headers */,
+				9C7283A91C076E710011CF4B /* HVItemDataTyped.h in Headers */,
+				9C7283EE1C076E710011CF4B /* HVBlock.h in Headers */,
+				9C7283A81C076E710011CF4B /* HVItemDataCommon.h in Headers */,
+				9C7283D81C076E710011CF4B /* HVSystemInstances.h in Headers */,
+				9C7283781C076E710011CF4B /* HVDouble.h in Headers */,
+				9C7283D01C076E710011CF4B /* HVResponseStatus.h in Headers */,
+				9C7283D91C076E710011CF4B /* HVVocab.h in Headers */,
+				9C7283D21C076E710011CF4B /* HVServiceDef.h in Headers */,
+				9C7283E31C076E710011CF4B /* XConverter.h in Headers */,
+				9C7283981C076E710011CF4B /* HVBloodGlucoseMeasurement.h in Headers */,
+				9C7283821C076E710011CF4B /* HVOneToFive.h in Headers */,
+				9C7284011C076E710011CF4B /* HVUser.h in Headers */,
+				9C7283921C076E710011CF4B /* HVAddress.h in Headers */,
+				9C72839B1C076E710011CF4B /* HVConcentrationValue.h in Headers */,
+				9C7283C71C076E710011CF4B /* HVVitalSignResult.h in Headers */,
+				9C7283791C076E710011CF4B /* HVEmailAddress.h in Headers */,
+				9C7283C01C076E710011CF4B /* HVPrescription.h in Headers */,
+				9C7283501C076E710011CF4B /* HVBeginBlobPutTask.h in Headers */,
+				9C7283E51C076E710011CF4B /* XLib.h in Headers */,
+				9C7283901C076E710011CF4B /* HVBlobPutParameters.h in Headers */,
+				9C7283F21C076E710011CF4B /* HVClientSettings.h in Headers */,
+				9C7283E21C076E710011CF4B /* HVUITaskAwareViewController.h in Headers */,
+				9C7283321C076E710011CF4B /* HVHeartRate.h in Headers */,
+				9C7283831C076E710011CF4B /* HVPositiveDouble.h in Headers */,
+				9C72832E1C076E710011CF4B /* HVEncounter.h in Headers */,
+				9C7283CA1C076E710011CF4B /* HVTestResultRangeValue.h in Headers */,
+				9C72839A1C076E710011CF4B /* HVCodedValue.h in Headers */,
+				9C72831F1C076E710011CF4B /* HVAllergy.h in Headers */,
+				9C72833C1C076E710011CF4B /* HVPeakFlow.h in Headers */,
+				9C7284041C076E970011CF4B /* HVStore.h in Headers */,
+				9C72830E1C076E710011CF4B /* HealthVaultRequest.h in Headers */,
+				9C7283AA1C076E710011CF4B /* HVItemFilter.h in Headers */,
+				9C72839D1C076E710011CF4B /* HVContact.h in Headers */,
+				9C7283EB1C076E710011CF4B /* XSerializableType.h in Headers */,
+				9C7283251C076E710011CF4B /* HVCCR.h in Headers */,
+				9C7283C61C076E710011CF4B /* HVTypes.h in Headers */,
+				9C7283331C076E710011CF4B /* HVHeight.h in Headers */,
+				9C72838A1C076E710011CF4B /* HVYear.h in Headers */,
+				9C72830A1C076E710011CF4B /* HVHttpDownload.h in Headers */,
+				9C7283211C076E710011CF4B /* HVBasicDemographics.h in Headers */,
+				9C7283B81C076E710011CF4B /* HVNameValue.h in Headers */,
+				9C7283C41C076E710011CF4B /* HVTime.h in Headers */,
+				9C72831E1C076E710011CF4B /* XmlTextReader.h in Headers */,
+				9C7283181C076E710011CF4B /* DateTimeUtils.h in Headers */,
+				9C72836C1C076E710011CF4B /* HVItemCommitScheduler.h in Headers */,
+				9C7283151C076E710011CF4B /* Provisioner.h in Headers */,
+				9C7283971C076E710011CF4B /* HVAudit.h in Headers */,
+				9C7283CE1C076E710011CF4B /* HVLabTestResultsGroup.h in Headers */,
+				9C7283961C076E710011CF4B /* HVAssessmentField.h in Headers */,
+				9C7283771C076E710011CF4B /* HVDay.h in Headers */,
+				9C72836D1C076E710011CF4B /* HVSynchronizedType.h in Headers */,
+				9C72836F1C076E710011CF4B /* HVTypeViewRefresher.h in Headers */,
+				9C7283A41C076E710011CF4B /* HVFoodEnergyValue.h in Headers */,
+				9C7283761C076E710011CF4B /* HVConstrainedXmlDate.h in Headers */,
+				9C7283591C076E710011CF4B /* HVSyncView.h in Headers */,
+				9C7283691C076E710011CF4B /* HVItemChangeTable.h in Headers */,
+				9C7283371C076E710011CF4B /* HVItemTestExtensions.h in Headers */,
+				9C7283671C076E710011CF4B /* HVWorkerStatus.h in Headers */,
+				9C7283FD1C076E710011CF4B /* HVRecordReference.h in Headers */,
+				9C7283E91C076E710011CF4B /* XWriter.h in Headers */,
+				9C7283BD1C076E710011CF4B /* HVPerson.h in Headers */,
+				9C7283451C076E710011CF4B /* HVWeight.h in Headers */,
+				9C7283261C076E710011CF4B /* HVCholesterol.h in Headers */,
+				9C7283581C076E710011CF4B /* HVTypeViewItems.h in Headers */,
+				9C7283E11C076E710011CF4B /* HVSynchronizedTypeDataSource.h in Headers */,
+				9C7283941C076E710011CF4B /* HVApproxDateTime.h in Headers */,
+				9C7283CF1C076E710011CF4B /* HVServerError.h in Headers */,
+				9C7283B61C076E710011CF4B /* HVMessageHeaderItem.h in Headers */,
+				9C72831B1C076E710011CF4B /* WebResponse.h in Headers */,
+				9C72836B1C076E710011CF4B /* HVItemCommitErrorHandler.h in Headers */,
+				9C72837F1C076E710011CF4B /* HVMonth.h in Headers */,
+				9C7283801C076E710011CF4B /* HVNonNegativeDouble.h in Headers */,
+				9C7283411C076E710011CF4B /* HVQuestionAnswer.h in Headers */,
+				9C7283DD1C076E710011CF4B /* HVVocabSearchParams.h in Headers */,
+				9C7283A31C076E710011CF4B /* HVFlowValue.h in Headers */,
+				9C7283481C076E710011CF4B /* HVGetItemsTask.h in Headers */,
+				9C7283F01C076E710011CF4B /* HVClientException.h in Headers */,
+				9C7283D11C076E710011CF4B /* HVResponse.h in Headers */,
+				9C7283351C076E710011CF4B /* HVInsurance.h in Headers */,
+				9C7283B01C076E710011CF4B /* HVItemState.h in Headers */,
+				9C7283FA1C076E710011CF4B /* HVLib.h in Headers */,
+				9C7283E61C076E710011CF4B /* XNodeType.h in Headers */,
+				9C7283861C076E710011CF4B /* HVString1024.h in Headers */,
+				9C7283C11C076E710011CF4B /* HVRecord.h in Headers */,
+				9C7283A61C076E710011CF4B /* HVItem.h in Headers */,
+				9C72832D1C076E710011CF4B /* HVEmotionalState.h in Headers */,
+				9C7283BB1C076E710011CF4B /* HVOrganization.h in Headers */,
+				9C7283E41C076E710011CF4B /* XException.h in Headers */,
+				9C7283561C076E710011CF4B /* HVDirectoryNameEnumerator.h in Headers */,
+				9C7283741C076E710011CF4B /* HVConstrainedInt.h in Headers */,
+				9C7284031C076E8E0011CF4B /* HVMethods.h in Headers */,
+				9C7283361C076E710011CF4B /* HVItemRaw.h in Headers */,
+				9C7283421C076E710011CF4B /* HVSleepJournalAM.h in Headers */,
+				9C7283131C076E710011CF4B /* MobilePlatform.h in Headers */,
+				9C7283991C076E710011CF4B /* HVCodableValue.h in Headers */,
+				9C7283A71C076E710011CF4B /* HVItemData.h in Headers */,
+				9C7283101C076E710011CF4B /* HVService.h in Headers */,
+				9C7283C91C076E710011CF4B /* HVWeightMeasurement.h in Headers */,
+				9C7283F51C076E710011CF4B /* HVDataExtensions.h in Headers */,
+				9C7283461C076E710011CF4B /* HVMethodFactory.h in Headers */,
+				9C7283DF1C076E710011CF4B /* HVLibUI.h in Headers */,
+				9C7283D61C076E710011CF4B /* HVServiceDefinition.h in Headers */,
+				9C7283681C076E710011CF4B /* HVItemChange.h in Headers */,
+				9C7283CB1C076E710011CF4B /* HVTestResultRange.h in Headers */,
+				9C7283E81C076E710011CF4B /* XString.h in Headers */,
+				9C7283111C076E710011CF4B /* HealthVaultService.h in Headers */,
+				9C72835B1C076E710011CF4B /* HVItemStore.h in Headers */,
+				9C72838D1C076E710011CF4B /* HVBlobPayload.h in Headers */,
+				9C72834C1C076E710011CF4B /* HVGetAuthorizedPeopleTask.h in Headers */,
+				9C7283CC1C076E710011CF4B /* HVLabTestResultValue.h in Headers */,
+				9C7283AE1C076E710011CF4B /* HVItemQueryResults.h in Headers */,
+				9C7283911C076E710011CF4B /* HVBlobSource.h in Headers */,
+				9C7283511C076E710011CF4B /* HVBlobUploadTask.h in Headers */,
+				9C72837C1C076E710011CF4B /* HVInt.h in Headers */,
+				9C7283C51C076E710011CF4B /* HVType.h in Headers */,
+				9C72830D1C076E710011CF4B /* HealthVaultRecord.h in Headers */,
+				9C7280DB1C0753870011CF4B /* HVKit.h in Headers */,
+				9C7283341C076E710011CF4B /* HVImmunization.h in Headers */,
+				9C72833B1C076E710011CF4B /* HVMessage.h in Headers */,
+				9C72838E1C076E710011CF4B /* HVBlobPayloadItem.h in Headers */,
+				9C7283D51C076E710011CF4B /* HVShellInfo.h in Headers */,
+				9C7283B11C076E710011CF4B /* HVItemType.h in Headers */,
+				9C7283141C076E710011CF4B /* AuthenticationCheckState.h in Headers */,
+				9C7283871C076E710011CF4B /* HVString255.h in Headers */,
+				9C7283C21C076E710011CF4B /* HVRelatedItem.h in Headers */,
+				9C7283311C076E710011CF4B /* HVFile.h in Headers */,
+				9C72839C1C076E710011CF4B /* HVConditionEntry.h in Headers */,
+				9C72834B1C076E710011CF4B /* HVVocabSearchTask.h in Headers */,
+				9C7283881C076E710011CF4B /* HVStringZ512.h in Headers */,
+				9C7283F61C076E710011CF4B /* HVDateExtensions.h in Headers */,
+				9C7283FE1C076E710011CF4B /* HVServerResponseStatus.h in Headers */,
+				9C7283611C076E710011CF4B /* HVLocalVocabStore.h in Headers */,
+				9C7283521C076E710011CF4B /* HVItemBlobUploadTask.h in Headers */,
+				9C7283AD1C076E710011CF4B /* HVItemQueryResult.h in Headers */,
+				9C7283051C076E710011CF4B /* HVMulticastDelegate.h in Headers */,
+				9C72839E1C076E710011CF4B /* HVDate.h in Headers */,
+				9C7283BA1C076E710011CF4B /* HVOccurence.h in Headers */,
+				9C72831A1C076E710011CF4B /* HVHttpTransport.h in Headers */,
+				9C7283B71C076E710011CF4B /* HVName.h in Headers */,
+				9C7283AC1C076E710011CF4B /* HVItemQuery.h in Headers */,
+				9C7283571C076E710011CF4B /* HVTypeViewItem.h in Headers */,
+				9C7283B41C076E710011CF4B /* HVMeasurement.h in Headers */,
+				9C72832B1C076E710011CF4B /* HVDietaryIntake.h in Headers */,
+				9C7283191C076E710011CF4B /* Logger.h in Headers */,
+				9C7283551C076E710011CF4B /* HVDirectory.h in Headers */,
+				9C7283F81C076E710011CF4B /* HVExceptionExtensions.h in Headers */,
+				9C7283401C076E710011CF4B /* HVProcedure.h in Headers */,
+				9C72838B1C076E710011CF4B /* HVBlob.h in Headers */,
+				9C7283DA1C076E710011CF4B /* HVVocabIdentifier.h in Headers */,
+				9C72837E1C076E710011CF4B /* HVMinute.h in Headers */,
+				9C7283071C076E710011CF4B /* HVAppProvisionController.h in Headers */,
+				9C7283DC1C076E710011CF4B /* HVVocabCodeSet.h in Headers */,
+				9C7283D31C076E710011CF4B /* HVConfigurationEntry.h in Headers */,
+				9C7283A11C076E710011CF4B /* HVDuration.h in Headers */,
+				9C7283241C076E710011CF4B /* HVCCD.h in Headers */,
+				9C72830C1C076E710011CF4B /* HealthVaultConfig.h in Headers */,
+				9C7283A51C076E710011CF4B /* HVGetAuthorizedPeopleResult.h in Headers */,
+				9C7283ED1C076E710011CF4B /* HVAsyncTask.h in Headers */,
+				9C7283161C076E710011CF4B /* HealthVaultSettings.h in Headers */,
+				9C7283931C076E710011CF4B /* HVApproxDate.h in Headers */,
+				9C7284021C076E710011CF4B /* HVValidator.h in Headers */,
+				9C72831D1C076E710011CF4B /* XmlElement.h in Headers */,
+				9C7283DE1C076E710011CF4B /* HVVocabParams.h in Headers */,
+				9C7283121C076E710011CF4B /* HVCryptographer.h in Headers */,
+				9C7283721C076E710011CF4B /* HVBool.h in Headers */,
+				9C7283301C076E710011CF4B /* HVFamilyHistory.h in Headers */,
+				9C7283BF1C076E710011CF4B /* HVPhone.h in Headers */,
+				9C7283621C076E710011CF4B /* HVCachingObjectStore.h in Headers */,
+				9C7283F91C076E710011CF4B /* HVKeyChain.h in Headers */,
+				9C7283BC1C076E710011CF4B /* HVPendingItem.h in Headers */,
+				9C72836E1C076E710011CF4B /* HVSynchronizationManager.h in Headers */,
+				9C7283F11C076E710011CF4B /* HVClientResult.h in Headers */,
+				9C7283381C076E710011CF4B /* HVItemTypes.h in Headers */,
+				9C7283EF1C076E710011CF4B /* HVClient.h in Headers */,
+				9C72835A1C076E710011CF4B /* HVTypeView.h in Headers */,
+				9C7283DB1C076E710011CF4B /* HVVocabItem.h in Headers */,
+				9C72834D1C076E710011CF4B /* HVGetVocabTask.h in Headers */,
+				9C7283841C076E710011CF4B /* HVPositiveInt.h in Headers */,
+				9C7283CD1C076E710011CF4B /* HVLabTestResultsDetails.h in Headers */,
+				9C7283751C076E710011CF4B /* HVConstrainedString.h in Headers */,
+				9C7283BE1C076E710011CF4B /* HVPersonInfo.h in Headers */,
+				9C72833A1C076E710011CF4B /* HVMedication.h in Headers */,
+				9C7283F31C076E710011CF4B /* HVCommon.h in Headers */,
+				9C7283A01C076E710011CF4B /* HVDisplayValue.h in Headers */,
+				9C7283E71C076E710011CF4B /* XReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -2025,6 +2816,24 @@
 			productReference = 5D5299AC14DCB3A700D2636E /* libHVLib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		9C7280D71C0753870011CF4B /* HVKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C7280DF1C0753870011CF4B /* Build configuration list for PBXNativeTarget "HVKit" */;
+			buildPhases = (
+				9C7280D31C0753870011CF4B /* Sources */,
+				9C7280D41C0753870011CF4B /* Frameworks */,
+				9C7280D51C0753870011CF4B /* Headers */,
+				9C7280D61C0753870011CF4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HVKit;
+			productName = HVKit;
+			productReference = 9C7280D81C0753870011CF4B /* HVKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2033,9 +2842,14 @@
 			attributes = {
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Microsoft Corporation";
+				TargetAttributes = {
+					9C7280D71C0753870011CF4B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 5D5299A614DCB3A700D2636E /* Build configuration list for PBXProject "HVLib" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -2048,9 +2862,20 @@
 			projectRoot = "";
 			targets = (
 				5D5299AB14DCB3A700D2636E /* HVLib */,
+				9C7280D71C0753870011CF4B /* HVKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C7280D61C0753870011CF4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D5299A814DCB3A700D2636E /* Sources */ = {
@@ -2303,6 +3128,256 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C7280D31C0753870011CF4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C7282CA1C0754C60011CF4B /* HVHttpTransport.m in Sources */,
+				9C7282BA1C0754A50011CF4B /* HVCryptographer.m in Sources */,
+				9C72821C1C07546D0011CF4B /* HVSynchronizedStore.m in Sources */,
+				9C7281F51C0754570011CF4B /* HVMonth.m in Sources */,
+				9C72828F1C0754870011CF4B /* HVInsurance.m in Sources */,
+				9C7282E01C0754E80011CF4B /* HVCollection.m in Sources */,
+				9C7281581C0754120011CF4B /* HVItemDataTyped.m in Sources */,
+				9C72813E1C0754120011CF4B /* HVConditionEntry.m in Sources */,
+				9C72824D1C07547B0011CF4B /* HVRemoveItemsTask.m in Sources */,
+				9C7281501C0754120011CF4B /* HVGetAuthorizedPeopleResult.m in Sources */,
+				9C72817A1C0754120011CF4B /* HVOccurence.m in Sources */,
+				9C7280F51C0753EC0011CF4B /* HVCore.m in Sources */,
+				9C72824B1C07547B0011CF4B /* HVPutItemsTask.m in Sources */,
+				9C72825F1C07547B0011CF4B /* HVRemoveRecordAuthTask.m in Sources */,
+				9C7282951C0754870011CF4B /* HVItemTypes.m in Sources */,
+				9C7282591C07547B0011CF4B /* HVBeginBlobPutTask.m in Sources */,
+				9C72811F1C0753F90011CF4B /* XSerializer.m in Sources */,
+				9C72826F1C0754870011CF4B /* HVCCR.m in Sources */,
+				9C7281F71C0754570011CF4B /* HVNonNegativeDouble.m in Sources */,
+				9C72812E1C0754120011CF4B /* HVApproxDateTime.m in Sources */,
+				9C7281081C0753EC0011CF4B /* HVServerResponseStatus.m in Sources */,
+				9C7282341C07546D0011CF4B /* HVItemChangeTable.m in Sources */,
+				9C7281CE1C07544F0011CF4B /* HVBlobInfo.m in Sources */,
+				9C7281281C0754010011CF4B /* HVUITaskAwareViewController.m in Sources */,
+				9C7282751C0754870011CF4B /* HVCondition.m in Sources */,
+				9C7281301C0754120011CF4B /* HVApproxMeasurement.m in Sources */,
+				9C7282261C07546D0011CF4B /* HVCachingObjectStore.m in Sources */,
+				9C7280E91C0753EC0011CF4B /* HVBlock.m in Sources */,
+				9C7282241C07546D0011CF4B /* HVLocalVocabStore.m in Sources */,
+				9C7281261C0754010011CF4B /* HVSynchronizedTypeDataSource.m in Sources */,
+				9C7282C41C0754BD0011CF4B /* Base64.m in Sources */,
+				9C7280EF1C0753EC0011CF4B /* HVClientResult.m in Sources */,
+				9C7281C71C0754430011CF4B /* HVVocabCodeSet.m in Sources */,
+				9C7281181C0753F90011CF4B /* XReader.m in Sources */,
+				9C7281641C0754120011CF4B /* HVItemSection.m in Sources */,
+				9C7282381C07546D0011CF4B /* HVItemCommitErrorHandler.m in Sources */,
+				9C72816E1C0754120011CF4B /* HVMeasurement.m in Sources */,
+				9C7281C51C0754430011CF4B /* HVVocabItem.m in Sources */,
+				9C7282B41C0754A50011CF4B /* HealthVaultRequest.m in Sources */,
+				9C7282491C07547B0011CF4B /* HVGetItemsTask.m in Sources */,
+				9C7281BA1C0754350011CF4B /* HVShellInfo.m in Sources */,
+				9C72825D1C07547B0011CF4B /* HVItemBlobUploadTask.m in Sources */,
+				9C7282851C0754870011CF4B /* HVFamilyHistory.m in Sources */,
+				9C7281521C0754120011CF4B /* HVItem.m in Sources */,
+				9C72815C1C0754120011CF4B /* HVItemKey.m in Sources */,
+				9C7282831C0754870011CF4B /* HVExercise.m in Sources */,
+				9C7281841C0754120011CF4B /* HVPhone.m in Sources */,
+				9C72812A1C0754120011CF4B /* HVAddress.m in Sources */,
+				9C7281DF1C0754570011CF4B /* HVConstrainedInt.m in Sources */,
+				9C7280FF1C0753EC0011CF4B /* HVKeyChain.m in Sources */,
+				9C7282A31C0754870011CF4B /* HVPersonalImage.m in Sources */,
+				9C7282C21C0754B60011CF4B /* HealthVaultSettings.m in Sources */,
+				9C7281D01C07544F0011CF4B /* HVBlobPayload.m in Sources */,
+				9C7281041C0753EC0011CF4B /* HVRandom.m in Sources */,
+				9C72813A1C0754120011CF4B /* HVCodedValue.m in Sources */,
+				9C7282D21C0754CD0011CF4B /* XmlTextReader.m in Sources */,
+				9C72817C1C0754120011CF4B /* HVOrganization.m in Sources */,
+				9C7282C01C0754AF0011CF4B /* Provisioner.m in Sources */,
+				9C72815A1C0754120011CF4B /* HVItemFilter.m in Sources */,
+				9C72823E1C07546D0011CF4B /* HVSynchronizationManager.m in Sources */,
+				9C72817E1C0754120011CF4B /* HVPendingItem.m in Sources */,
+				9C7281441C0754120011CF4B /* HVDateTime.m in Sources */,
+				9C7282DA1C0754DC0011CF4B /* HVNetworkReachability.m in Sources */,
+				9C7282D41C0754DC0011CF4B /* HVHttp.m in Sources */,
+				9C7281661C0754120011CF4B /* HVItemState.m in Sources */,
+				9C72811C1C0753F90011CF4B /* XWriter.m in Sources */,
+				9C7281211C0753F90011CF4B /* XSerializableType.m in Sources */,
+				9C7282451C07547B0011CF4B /* HVMethodFactory.m in Sources */,
+				9C7282E21C0754E80011CF4B /* HVMulticastDelegate.m in Sources */,
+				9C7281DB1C0754570011CF4B /* HVBool.m in Sources */,
+				9C7282AF1C0754870011CF4B /* HVWeight.m in Sources */,
+				9C7282011C0754570011CF4B /* HVSecond.m in Sources */,
+				9C72822A1C07546D0011CF4B /* HVDownloadItemsTask.m in Sources */,
+				9C72827B1C0754870011CF4B /* HVDietaryIntake.m in Sources */,
+				9C72822C1C07546D0011CF4B /* HVPartitionedStore.m in Sources */,
+				9C7282C61C0754BD0011CF4B /* DateTimeUtils.m in Sources */,
+				9C7281421C0754120011CF4B /* HVDate.m in Sources */,
+				9C7281901C0754120011CF4B /* HVType.m in Sources */,
+				9C72810C1C0753EC0011CF4B /* HVUIAlert.m in Sources */,
+				9C72827D1C0754870011CF4B /* HVEmergencyOrProviderContact.m in Sources */,
+				9C7281B61C0754350011CF4B /* HVConfigurationEntry.m in Sources */,
+				9C7282171C07546D0011CF4B /* HVTypeView.m in Sources */,
+				9C7282BC1C0754A50011CF4B /* MobilePlatform.m in Sources */,
+				9C7281761C0754120011CF4B /* HVNameValue.m in Sources */,
+				9C7280FB1C0753EC0011CF4B /* HVDictionaryExtensions.m in Sources */,
+				9C7282321C07546D0011CF4B /* HVItemChange.m in Sources */,
+				9C7281801C0754120011CF4B /* HVPerson.m in Sources */,
+				9C7281971C0754120011CF4B /* HVWeightMeasurement.m in Sources */,
+				9C7282071C0754570011CF4B /* HVStringZ512.m in Sources */,
+				9C7282971C0754870011CF4B /* HVLabTestResults.m in Sources */,
+				9C7282B21C0754A50011CF4B /* HealthVaultRecord.m in Sources */,
+				9C7282991C0754870011CF4B /* HVMedication.m in Sources */,
+				9C7282611C07547B0011CF4B /* HVGetServiceDefinitionTask.m in Sources */,
+				9C7282711C0754870011CF4B /* HVCholesterol.m in Sources */,
+				9C7281061C0753EC0011CF4B /* HVRecordReference.m in Sources */,
+				9C7282471C07547B0011CF4B /* HVMethodCallTask.m in Sources */,
+				9C7282CE1C0754C60011CF4B /* WebTransport.m in Sources */,
+				9C7282421C07546D0011CF4B /* HVBatchItemDownloader.m in Sources */,
+				9C7281241C0754010011CF4B /* HVTypeViewDataSource.m in Sources */,
+				9C7280F21C0753EC0011CF4B /* HVCommon.c in Sources */,
+				9C7281541C0754120011CF4B /* HVItemData.m in Sources */,
+				9C72822E1C07546D0011CF4B /* HVLockTable.m in Sources */,
+				9C7281011C0753EC0011CF4B /* HVLib.m in Sources */,
+				9C7282531C07547B0011CF4B /* HVGetVocabTask.m in Sources */,
+				9C7281341C0754120011CF4B /* HVAudit.m in Sources */,
+				9C7281FB1C0754570011CF4B /* HVOneToFive.m in Sources */,
+				9C7281A31C0754120011CF4B /* HVServerError.m in Sources */,
+				9C7282DE1C0754E20011CF4B /* HVAppProvisionController.m in Sources */,
+				9C7282A11C0754870011CF4B /* HVPersonalDemographics.m in Sources */,
+				9C7282AB1C0754870011CF4B /* HVSleepJournalPM.m in Sources */,
+				9C72823C1C07546D0011CF4B /* HVSynchronizedType.m in Sources */,
+				9C7280F91C0753EC0011CF4B /* HVDateExtensions.m in Sources */,
+				9C7282B61C0754A50011CF4B /* HealthVaultResponse.m in Sources */,
+				9C72814E1C0754120011CF4B /* HVFoodEnergyValue.m in Sources */,
+				9C7281861C0754120011CF4B /* HVPrescription.m in Sources */,
+				9C7281C01C0754350011CF4B /* HVSystemInstances.m in Sources */,
+				9C7281621C0754120011CF4B /* HVItemQueryResults.m in Sources */,
+				9C7281BE1C0754350011CF4B /* HVInstance.m in Sources */,
+				9C7281E91C0754570011CF4B /* HVEmailAddress.m in Sources */,
+				9C7282771C0754870011CF4B /* HVDailyDietaryIntake.m in Sources */,
+				9C7281EF1C0754570011CF4B /* HVInt.m in Sources */,
+				9C7282571C07547B0011CF4B /* HVVocabSearcher.m in Sources */,
+				9C7281101C0753EC0011CF4B /* HVValidator.m in Sources */,
+				9C7280ED1C0753EC0011CF4B /* HVClientException.m in Sources */,
+				9C7282FD1C0764A20011CF4B /* HVUser.m in Sources */,
+				9C72819F1C0754120011CF4B /* HVLabTestResultsDetails.m in Sources */,
+				9C72827F1C0754870011CF4B /* HVEmotionalState.m in Sources */,
+				9C7282101C07546D0011CF4B /* HVDirectoryNameEnumerator.m in Sources */,
+				9C7281681C0754120011CF4B /* HVItemType.m in Sources */,
+				9C7281A71C0754120011CF4B /* HVResponse.m in Sources */,
+				9C7282121C07546D0011CF4B /* HVTypeViewItem.m in Sources */,
+				9C72818A1C0754120011CF4B /* HVRelatedItem.m in Sources */,
+				9C7280F11C0753EC0011CF4B /* HVClientSettings.m in Sources */,
+				9C7282221C07546D0011CF4B /* HVLocalRecordStore.m in Sources */,
+				9C72821E1C07546D0011CF4B /* HVLocalVault.m in Sources */,
+				9C72814C1C0754120011CF4B /* HVFlowValue.m in Sources */,
+				9C7281931C0754120011CF4B /* HVVitalSignResult.m in Sources */,
+				9C7282871C0754870011CF4B /* HVFile.m in Sources */,
+				9C7282301C07546D0011CF4B /* HVWorkerStatus.m in Sources */,
+				9C7281F91C0754570011CF4B /* HVNonNegativeInt.m in Sources */,
+				9C72814A1C0754120011CF4B /* HVEmail.m in Sources */,
+				9C7281991C0754120011CF4B /* HVTestResultRangeValue.m in Sources */,
+				9C72829F1C0754870011CF4B /* HVPersonalContactInfo.m in Sources */,
+				9C7281D81C07544F0011CF4B /* HVBlobSource.m in Sources */,
+				9C7282D81C0754DC0011CF4B /* HVHttpDownload.m in Sources */,
+				9C7281121C0753F90011CF4B /* XConverter.m in Sources */,
+				9C7281561C0754120011CF4B /* HVItemDataCommon.m in Sources */,
+				9C7280E51C0753EC0011CF4B /* HVArrayExtensions.m in Sources */,
+				9C7282511C07547B0011CF4B /* HVGetAuthorizedPeopleTask.m in Sources */,
+				9C7281821C0754120011CF4B /* HVPersonInfo.m in Sources */,
+				9C7281FD1C0754570011CF4B /* HVPositiveDouble.m in Sources */,
+				9C7281B81C0754350011CF4B /* HVPlatformInfo.m in Sources */,
+				9C72826D1C0754870011CF4B /* HVCCD.m in Sources */,
+				9C7281A11C0754120011CF4B /* HVLabTestResultsGroup.m in Sources */,
+				9C7282A51C0754870011CF4B /* HVProcedure.m in Sources */,
+				9C72813C1C0754120011CF4B /* HVConcentrationValue.m in Sources */,
+				9C7282361C07546D0011CF4B /* HVItemChangeManager.m in Sources */,
+				9C7281361C0754120011CF4B /* HVBloodGlucoseMeasurement.m in Sources */,
+				9C7282931C0754870011CF4B /* HVItemTestExtensions.m in Sources */,
+				9C7281E71C0754570011CF4B /* HVDouble.m in Sources */,
+				9C7282D01C0754CD0011CF4B /* XmlElement.m in Sources */,
+				9C7282BE1C0754AF0011CF4B /* AuthenticationCheckState.m in Sources */,
+				9C7282651C0754870011CF4B /* HVAssessment.m in Sources */,
+				9C72820E1C07546D0011CF4B /* HVDirectory.m in Sources */,
+				9C7282A71C0754870011CF4B /* HVQuestionAnswer.m in Sources */,
+				9C7281DD1C0754570011CF4B /* HVConstrainedDouble.m in Sources */,
+				9C7280F71C0753EC0011CF4B /* HVDataExtensions.m in Sources */,
+				9C7281701C0754120011CF4B /* HVMessageAttachment.m in Sources */,
+				9C7281741C0754120011CF4B /* HVName.m in Sources */,
+				9C72812C1C0754120011CF4B /* HVApproxDate.m in Sources */,
+				9C7281F31C0754570011CF4B /* HVMinute.m in Sources */,
+				9C7282911C0754870011CF4B /* HVItemRaw.m in Sources */,
+				9C7281A51C0754120011CF4B /* HVResponseStatus.m in Sources */,
+				9C7282031C0754570011CF4B /* HVString1024.m in Sources */,
+				9C72819D1C0754120011CF4B /* HVLabTestResultValue.m in Sources */,
+				9C7281BC1C0754350011CF4B /* HVServiceDefinition.m in Sources */,
+				9C72816A1C0754120011CF4B /* HVItemView.m in Sources */,
+				9C7282B81C0754A50011CF4B /* HealthVaultService.m in Sources */,
+				9C7282401C07546D0011CF4B /* HVTypeViewRefresher.m in Sources */,
+				9C7281E31C0754570011CF4B /* HVConstrainedXmlDate.m in Sources */,
+				9C7281FF1C0754570011CF4B /* HVPositiveInt.m in Sources */,
+				9C72829B1C0754870011CF4B /* HVMessage.m in Sources */,
+				9C7282051C0754570011CF4B /* HVString255.m in Sources */,
+				9C72828B1C0754870011CF4B /* HVHeight.m in Sources */,
+				9C72815E1C0754120011CF4B /* HVItemQuery.m in Sources */,
+				9C7282DC1C0754E20011CF4B /* HVBrowserController.m in Sources */,
+				9C7282AD1C0754870011CF4B /* HVVitalSigns.m in Sources */,
+				9C7281601C0754120011CF4B /* HVItemQueryResult.m in Sources */,
+				9C7281381C0754120011CF4B /* HVCodableValue.m in Sources */,
+				9C72821A1C07546D0011CF4B /* HVMemoryStore.m in Sources */,
+				9C7282A91C0754870011CF4B /* HVSleepJournalAM.m in Sources */,
+				9C7280EB1C0753EC0011CF4B /* HVClient.m in Sources */,
+				9C72829D1C0754870011CF4B /* HVPeakFlow.m in Sources */,
+				9C7281F11C0754570011CF4B /* HVMillisecond.m in Sources */,
+				9C7282551C07547B0011CF4B /* HVGetPersonalImageTask.m in Sources */,
+				9C7282141C07546D0011CF4B /* HVTypeViewItems.m in Sources */,
+				9C72824F1C07547B0011CF4B /* HVVocabSearchTask.m in Sources */,
+				9C7282D61C0754DC0011CF4B /* HVHttpRequestResponse.m in Sources */,
+				9C7282671C0754870011CF4B /* HVBasicDemographics.m in Sources */,
+				9C72820B1C0754570011CF4B /* HVYear.m in Sources */,
+				9C7281401C0754120011CF4B /* HVContact.m in Sources */,
+				9C7281C31C0754430011CF4B /* HVVocabIdentifier.m in Sources */,
+				9C7281D61C07544F0011CF4B /* HVBlobPutParameters.m in Sources */,
+				9C7281ED1C0754570011CF4B /* HVHour.m in Sources */,
+				9C7280E71C0753EC0011CF4B /* HVAsyncTask.m in Sources */,
+				9C72810A1C0753EC0011CF4B /* HVStringExtensions.m in Sources */,
+				9C72811A1C0753F90011CF4B /* XString.m in Sources */,
+				9C72826B1C0754870011CF4B /* HVBloodPressure.m in Sources */,
+				9C72823A1C07546D0011CF4B /* HVItemCommitScheduler.m in Sources */,
+				9C7281321C0754120011CF4B /* HVAssessmentField.m in Sources */,
+				9C7281D41C07544F0011CF4B /* HVBlobHashInfo.m in Sources */,
+				9C7282C81C0754BD0011CF4B /* Logger.m in Sources */,
+				9C7281461C0754120011CF4B /* HVDisplayValue.m in Sources */,
+				9C7281141C0753F90011CF4B /* XException.m in Sources */,
+				9C7282691C0754870011CF4B /* HVBloodGlucose.m in Sources */,
+				9C72816C1C0754120011CF4B /* HVLengthMeasurement.m in Sources */,
+				9C7282CC1C0754C60011CF4B /* WebResponse.m in Sources */,
+				9C72818E1C0754120011CF4B /* HVTime.m in Sources */,
+				9C7282891C0754870011CF4B /* HVHeartRate.m in Sources */,
+				9C7281E11C0754570011CF4B /* HVConstrainedString.m in Sources */,
+				9C72818C1C0754120011CF4B /* HVRelative.m in Sources */,
+				9C7281781C0754120011CF4B /* HVNutritionFact.m in Sources */,
+				9C7281951C0754120011CF4B /* HVVolumeValue.m in Sources */,
+				9C7282811C0754870011CF4B /* HVEncounter.m in Sources */,
+				9C72819B1C0754120011CF4B /* HVTestResultRange.m in Sources */,
+				9C7282791C0754870011CF4B /* HVDailyMedicationUsage.m in Sources */,
+				9C72825B1C07547B0011CF4B /* HVBlobUploadTask.m in Sources */,
+				9C7281EB1C0754570011CF4B /* HVGuid.m in Sources */,
+				9C7282091C0754570011CF4B /* HVVocabSearchText.m in Sources */,
+				9C7281D21C07544F0011CF4B /* HVBlobPayloadItem.m in Sources */,
+				9C7281481C0754120011CF4B /* HVDuration.m in Sources */,
+				9C7281C91C0754430011CF4B /* HVVocabSearchParams.m in Sources */,
+				9C7282731C0754870011CF4B /* HVCholesterolV2.m in Sources */,
+				9C7281CB1C0754430011CF4B /* HVVocabParams.m in Sources */,
+				9C7282631C0754870011CF4B /* HVAllergy.m in Sources */,
+				9C7281881C0754120011CF4B /* HVRecord.m in Sources */,
+				9C72828D1C0754870011CF4B /* HVImmunization.m in Sources */,
+				9C7282201C07546D0011CF4B /* HVLocalItemStore.m in Sources */,
+				9C7281721C0754120011CF4B /* HVMessageHeaderItem.m in Sources */,
+				9C72811D1C0753F90011CF4B /* XNodeType.m in Sources */,
+				9C7280FD1C0753EC0011CF4B /* HVExceptionExtensions.m in Sources */,
+				9C7281E51C0754570011CF4B /* HVDay.m in Sources */,
+				9C7282281C07546D0011CF4B /* HVStoredQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -2350,7 +3425,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2394,6 +3469,7 @@
 				GCC_PREFIX_HEADER = "HVLib/HVLib-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2/**";
 				LIBRARY_SEARCH_PATHS = /usr/lib;
+				MACH_O_TYPE = staticlib;
 				OTHER_CFLAGS = (
 					"-fpie",
 					"-fstack-protector-all",
@@ -2415,6 +3491,7 @@
 				GCC_PREFIX_HEADER = "HVLib/HVLib-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2/**";
 				LIBRARY_SEARCH_PATHS = /usr/lib;
+				MACH_O_TYPE = staticlib;
 				OTHER_CFLAGS = (
 					"-fpie",
 					"-fstack-protector-all",
@@ -2425,6 +3502,91 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		9C7280DD1C0753870011CF4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_MODULES_AUTOLINK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2/**";
+				INFOPLIST_FILE = HVKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/lib;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.vanzinderenbakker.HVKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C7280DE1C0753870011CF4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_MODULES_AUTOLINK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_USE_STANDARD_INCLUDE_SEARCHING = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = "$(SDK_DIR)/usr/include/libxml2/**";
+				INFOPLIST_FILE = HVKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/lib;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.vanzinderenbakker.HVKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(CONTENTS_FOLDER_PATH)/Headers";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -2445,6 +3607,15 @@
 			buildConfigurations = (
 				5D5299BA14DCB3A700D2636E /* Debug */,
 				5D5299BB14DCB3A700D2636E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C7280DF1C0753870011CF4B /* Build configuration list for PBXNativeTarget "HVKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C7280DD1C0753870011CF4B /* Debug */,
+				9C7280DE1C0753870011CF4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

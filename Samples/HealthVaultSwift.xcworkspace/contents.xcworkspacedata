@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:HealthVault-Swift/HealthVault-Swift.xcodeproj">
+      location = "group:HealthVaultSwift/HealthVaultSwift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../HVLib.xcodeproj">
