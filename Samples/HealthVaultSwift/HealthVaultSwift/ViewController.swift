@@ -59,8 +59,13 @@ class ViewController: UIViewController {
         let record = HVClient.current().currentRecord
         record.getItemsForClass(HVWeight.self) {
             task in
+
             let items = (task as! HVGetItemsTask).itemsRetrieved
-            print("weights retrieved: \(items)")
+            for item in items {
+                let weight = item.weight()
+                print("\(weight.when): \(weight.inKg) Kg.")
+            }
+
         }
     }
 

@@ -53,11 +53,8 @@
 		9C7280B51C0753550011CF4B = {
 			isa = PBXGroup;
 			children = (
-				9C759E5A1C089B5B00147F23 /* libHVLib.a */,
-				9C23D8EB1C08705A00FD9610 /* SystemConfiguration.framework */,
-				9C23D8E91C08705000FD9610 /* MobileCoreServices.framework */,
-				9C23D8E71C08704600FD9610 /* Security.framework */,
 				9C7280C01C0753550011CF4B /* HealthVaultSwift */,
+				9C759E5C1C08A0BD00147F23 /* Frameworks */,
 				9C7280BF1C0753550011CF4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,16 +70,35 @@
 		9C7280C01C0753550011CF4B /* HealthVaultSwift */ = {
 			isa = PBXGroup;
 			children = (
-				9C23D8E01C08604B00FD9610 /* HVLib-Bridging-Header.h */,
-				9C23D8EF1C0871CA00FD9610 /* ClientSettings.xml */,
 				9C7280C11C0753550011CF4B /* AppDelegate.swift */,
 				9C7280C31C0753550011CF4B /* ViewController.swift */,
 				9C7280C51C0753550011CF4B /* Main.storyboard */,
 				9C7280C81C0753550011CF4B /* Assets.xcassets */,
 				9C7280CA1C0753550011CF4B /* LaunchScreen.storyboard */,
 				9C7280CD1C0753550011CF4B /* Info.plist */,
+				9C759E5D1C08A0DF00147F23 /* Supporting Files */,
 			);
 			path = HealthVaultSwift;
+			sourceTree = "<group>";
+		};
+		9C759E5C1C08A0BD00147F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C759E5A1C089B5B00147F23 /* libHVLib.a */,
+				9C23D8EB1C08705A00FD9610 /* SystemConfiguration.framework */,
+				9C23D8E91C08705000FD9610 /* MobileCoreServices.framework */,
+				9C23D8E71C08704600FD9610 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C759E5D1C08A0DF00147F23 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C23D8E01C08604B00FD9610 /* HVLib-Bridging-Header.h */,
+				9C23D8EF1C0871CA00FD9610 /* ClientSettings.xml */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +293,10 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/HealthVaultSwift",
 				);
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.vanzinderenbakker.HealthVaultSwift;
 				PRODUCT_NAME = HealthVaultSwiftTest;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HealthVaultSwift/HVLib-Bridging-Header.h";
@@ -298,7 +317,10 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/HealthVaultSwift",
 				);
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.vanzinderenbakker.HealthVaultSwift;
 				PRODUCT_NAME = HealthVaultSwiftTest;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HealthVaultSwift/HVLib-Bridging-Header.h";
