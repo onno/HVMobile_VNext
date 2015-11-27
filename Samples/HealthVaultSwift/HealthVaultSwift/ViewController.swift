@@ -11,14 +11,57 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - View Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        startApp()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    // MARK: - HealthVault Startup
+
+    func startApp() {
+        HVClient.current().startWithParentController(self) {
+            sender in
+            if HVClient.current().provisionStatus == HVAppProvisionSuccess {
+                self.startUpSuccess()
+            } else {
+                self.startUpFailed()
+            }
+        }
+    }
+
+
+    func startUpSuccess() {
+        print("HealthVault startup succeeded.")
+        let record = HVClient.current().currentRecord
+        print("Current record owner: \(record.displayName)")
+        getWeightsFromHealthVault()
+    }
+
+
+    func startUpFailed() {
+        print("HealhtVault startup failed!")
+        HVUIAlert.showWithMessage("Provisioning not completed. Retry?") {
+            sender in
+            let alert = sender as! HVUIAlert
+            if (alert.result == HVUIAlertOK) {
+                self.startApp()
+            }
+        }
+    }
+
+
+    // MARK: - Getting & Putting things from/to HealthVault
+
+    func getWeightsFromHealthVault() {
+        let record = HVClient.current().currentRecord
+        record.getItemsForClass(HVWeight.self) {
+            task in
+            let items = (task as! HVGetItemsTask).itemsRetrieved
+            print("weights retrieved: \(items)")
+        }
     }
 
 }
