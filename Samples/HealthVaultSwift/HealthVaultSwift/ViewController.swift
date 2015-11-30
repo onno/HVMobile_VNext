@@ -9,7 +9,30 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+
+    // MARK: - Variables
+
+    var items: HVItemCollection = HVItemCollection()
+
+    lazy var massFormatter: NSMassFormatter = {
+        let numberFormatter = NSNumberFormatter()
+        numberFormatter.minimumFractionDigits = 1
+        numberFormatter.maximumFractionDigits = 1
+
+        let formatter = NSMassFormatter()
+        formatter.forPersonMassUse = true
+        formatter.unitStyle = .Medium
+        formatter.numberFormatter = numberFormatter
+        return formatter
+    }()
+
+    lazy var dateFormatter: NSDateFormatter = {
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = .MediumStyle
+        return formatter
+    }()
+
 
     // MARK: - View Life Cycle
 
@@ -59,14 +82,38 @@ class ViewController: UIViewController {
         let record = HVClient.current().currentRecord
         record.getItemsForClass(HVWeight.self) {
             task in
+            self.items = (task as! HVGetItemsTask).itemsRetrieved
 
-            let items = (task as! HVGetItemsTask).itemsRetrieved
-            for item in items {
-                let weight = item.weight()
-                print("\(weight.when): \(weight.inKg) Kg.")
-            }
-
+            print("On the main thread? " + (NSThread.currentThread().isMainThread ? "Yes" : "No"))
+            self.tableView.reloadData()
         }
+    }
+
+
+    // MARK: - Table View Data Source
+
+    override func tableView(
+        tableView: UITableView,
+        numberOfRowsInSection section: Int
+    ) -> Int {
+        return items.count
+    }
+
+
+    override func tableView(
+        tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath
+    ) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(
+            "WeightCell",
+            forIndexPath: indexPath
+        )
+
+        let weight = items[indexPath.row].weight()
+        cell.textLabel!.text = massFormatter.stringFromKilograms(weight.inKg)
+        cell.detailTextLabel!.text = dateFormatter.stringFromDate(weight.when.toDate())
+
+        return cell
     }
 
 }
