@@ -60,6 +60,8 @@ class ViewController: UITableViewController {
         print("HealthVault startup succeeded.")
         let record = HVClient.current().currentRecord
         print("Current record owner: \(record.displayName)")
+
+        self.navigationItem.title = record.displayName
         getWeightsFromHealthVault()
     }
 
