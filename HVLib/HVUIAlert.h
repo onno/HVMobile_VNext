@@ -29,7 +29,10 @@ enum HVUIAlertResult
 @interface HVUIAlert : NSObject <UIAlertViewDelegate>
 {
     enum HVUIAlertResult m_result;
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     UIAlertView *m_view;
+    #pragma clang diagnostic pop
     HVNotify m_callback;
     NSString* m_text;
 }
@@ -39,7 +42,10 @@ enum HVUIAlertResult
 // Properties
 //
 //-------------------------
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 @property (readonly, nonatomic) UIAlertView* view;
+#pragma clang diagnostic pop
 @property (readonly, nonatomic) enum HVUIAlertResult result;
 @property (readonly, nonatomic) NSString* inputText;
 
